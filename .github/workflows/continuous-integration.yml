@@ -15,8 +15,11 @@ jobs:
         run: cd ./packages/client && npm ci
       
       - name: Test
-        run: cd ./packages/client npm run test --watchAll=false
+        run: cd ./packages/client && npm run test --watchAll=false
       
       - name: Build
-        run: cd ./packages/client npm run build
+        run: cd ./packages/client && npm run build
+
+      - name: Remove build
+        run: cd ./packages/client && rm -rf build
 
