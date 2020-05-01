@@ -11,12 +11,12 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-    - name: Install dependencies
-      run: cd ./packages/client && npm ci
-    
-    - name: Test
-      run: pwd && npm run test --watchAll=false
-    
-    - name: Build
-      run: pwd && npm run build
+      - name: Install dependencies
+        run: cd ./packages/client && npm ci
+      
+      - name: Test
+        run: pwd && npm run test --watchAll=false
+      
+      - name: Build
+        run: pwd && npm run build
 
