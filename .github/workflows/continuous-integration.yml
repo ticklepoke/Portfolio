@@ -1,0 +1,21 @@
+name: Continuous Integration
+
+on: [pull_request]
+
+jobs:
+  buildAndTest:
+    name: Build and Test (Client)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+
+        - name: List dir
+          run: pwd && ls
+      # - name: Install dependencies
+      #   run: npm install
+      
+      # - name: Build
+      #   run: npm run build
+
+      # - name: Test
+      #   run: npm run test --watchAll=false
