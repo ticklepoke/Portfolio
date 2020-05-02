@@ -19,6 +19,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "test:nowatch": "react-scripts test --watchAll=false",
     "eject": "react-scripts eject",
     "lint": "eslint '**/*.{js,ts,tsx}'",
     "lint:fix": "prettier-eslint \"$(pwd)/**/*.{ts,js,tsx}\" --write"
@@ -60,7 +61,7 @@
   "lint-staged": {
     "*.{js,ts,tsx}": [
       "npm run lint:fix",
-      "npm run test -- --watchAll=false"
+      "npm run test:nowatch"
     ]
   }
 }
