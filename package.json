@@ -10,7 +10,11 @@
   },
   "scripts": {
     "commit": "git-cz",
-    "release": "standard-version"
+    "release": "standard-version",
+    "test": "lerna run test",
+    "test:client": "lerna run test --scope=@portfolio/client",
+    "new-version": "lerna version --conventional-commits",
+    "diff": "lerna diff"
   },
   "config": {
     "commitizen": {

@@ -2,11 +2,5 @@
   "packages": [
     "packages/*"
   ],
-  "scripts": {
-    "test": "lerna run test",
-    "test:client": "lerna run test --scope=@portfolio/client",
-    "new-version": "lerna version --conventional-commits",
-    "diff": "lerna diff"
-  },
   "version": "0.0.0"
 }
