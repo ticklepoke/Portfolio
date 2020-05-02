@@ -4,24 +4,24 @@ on:
   push: 
     branches: [ staging ]
   
-  jobs:
-    deploy:
-      name: Deploy (Staging)
-      runs-on: ubuntu-latest
-      steps:
-        - uses: actions/checkout@v2
+jobs:
+  deploy:
+    name: Deploy (Staging)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
 
-        - name: Install dependencies
-          run: cd ./packages/client && npm i
+      - name: Install dependencies
+        run: cd ./packages/client && npm i
 
-        - name: Build static files
-          run: cd ./packages/client && npm run build --if-present
+      - name: Build static files
+        run: cd ./packages/client && npm run build --if-present
 
-        - name: Deploy to netlify
-          uses: netlify/actions/cli@master
-          env: 
-            NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-            NETLIFY_SITE_ID: ${{ secrets.STAGING_NETLIFY_SITE_ID }}
-          with: 
-            args: deploy --dir=./packages/client/build --prod
-            secrets: '["NETLIFY_AUTH_TOKEN", "NETLIFY_SITE_ID"]'
+      - name: Deploy to netlify
+        uses: netlify/actions/cli@master
+        env: 
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.STAGING_NETLIFY_SITE_ID }}
+        with: 
+          args: deploy --dir=./packages/client/build --prod
+          secrets: '["NETLIFY_AUTH_TOKEN", "NETLIFY_SITE_ID"]'
