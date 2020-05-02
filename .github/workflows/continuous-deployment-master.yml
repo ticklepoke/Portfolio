@@ -1,0 +1,27 @@
+name: Continuous Deployment Master
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  deploy:
+    name: Deploy (Master)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: cd ./packages/client && npm i
+
+      - name: Build static files
+        run: cd ./packages/client && npm run build --if-present
+
+      - name: Deploy to netlify
+        uses: netlify/actions/cli@master
+        env: 
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.MASTER_NETLIFY_SITE_ID }}
+        with: 
+          args: deploy --dir=build --prod
+          secrets: '["NETLIFY_AUTH_TOKEN", "NETLIFY_SITE_ID"]'
