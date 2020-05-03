@@ -14,5 +14,5 @@ test('sample test', () => {
 
 test('Mounting root app', () => {
   const { getByText } = render(<App />)
-  expect(getByText('Header')).toBeInTheDocument()
+  expect(getByText('Nigel Lee')).toBeInTheDocument()
 })
