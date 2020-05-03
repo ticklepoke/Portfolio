@@ -1,12 +1,13 @@
-import React from 'react'
-import { Helmet } from 'react-helmet'
+import React, { Fragment } from 'react'
+import HelmetWrapper from '../common/HelmetWrapper'
 
 export default function Experience () {
   return (
-    <div>
-      <Helmet>
-        <title>Experiences | Nigel Lee</title>
-      </Helmet>
-    </div>
+    <Fragment>
+      <HelmetWrapper
+        title="Experiences | Nigel Lee"
+        description="SG Innovate Summation Program Apprentice, DBS Unicorn+ Tech Intern, Renaissance Engineering Program Student"
+      />
+    </Fragment>
   )
 }
