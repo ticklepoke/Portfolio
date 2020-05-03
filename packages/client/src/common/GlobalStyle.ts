@@ -13,6 +13,11 @@ body {
     transition: all 0.25s linear;
 }
 
+a {
+    color: ${({ theme }: any) => theme.text};
+    transition: all 0.25s linear;
+}
+
 .navbar-dynamic-bg {
     background: ${({ theme }: any) => theme.body};
     transition: all 0.25s linear;

@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link, withRouter } from 'react-router-dom'
+import Toggle from './ToggleTheme'
 
 function Navbar (props: any) {
   return (
@@ -52,6 +53,9 @@ function Navbar (props: any) {
             >
               Projects
             </Link>
+          </li>
+          <li>
+            <Toggle theme={props.theme} toggleTheme={props.toggleTheme} />
           </li>
         </ul>
       </div>
