@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.3.0](https://github.com/ticklepoke/Portfolio/compare/v0.2.0...v0.3.0) (2020-05-03)
+
+
+### Bug Fixes
+
+* **Fixed test:** test ([8b2bb06](https://github.com/ticklepoke/Portfolio/commit/8b2bb06c8dba84a03281cdea99c54b1e4e173018))
+
+
+### Features
+
+* **Dark Theme:** Added dark theming files ([ea9cde1](https://github.com/ticklepoke/Portfolio/commit/ea9cde1600e4220a4fb4da697c69617c5ab8e902))
+
+
+
+
+
 # [0.2.0](https://github.com/ticklepoke/Portfolio/compare/v0.1.1...v0.2.0) (2020-05-03)
 
 
