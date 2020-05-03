@@ -2,10 +2,7 @@ import React, { Suspense, lazy } from 'react'
 import { Route, Switch, BrowserRouter as Router } from 'react-router-dom'
 import ErrorBoundary from './common/ErrorBoundary'
 
-// import './App.css'
-
 const HomeLazy = lazy(() => import('./pages/Home'))
-
 const ExperienceLazy = lazy(() => import('./pages/Experience'))
 
 function App () {
