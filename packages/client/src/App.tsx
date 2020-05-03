@@ -29,7 +29,7 @@ function App () {
         <GlobalStyles />
         <Router>
           <Navbar theme={theme} />
-          <Toggle toggleTheme={toggleTheme} />
+          <Toggle theme={theme} toggleTheme={toggleTheme} />
           <Suspense fallback={<Loading />}>
             <Switch>
               <Route path="/" exact>
