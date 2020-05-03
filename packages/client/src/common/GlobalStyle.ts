@@ -27,4 +27,9 @@ body {
     color: ${({ theme }: any) => theme.text};
     transition: all 0.25s linear;
 }
+
+.loading-screen {
+    background: ${({ theme }: any) => theme.body};
+    transition: all 0.25s linear; 
+}
 `
