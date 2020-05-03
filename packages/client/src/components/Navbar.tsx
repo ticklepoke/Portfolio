@@ -2,7 +2,15 @@ import React from 'react'
 import { Link, withRouter } from 'react-router-dom'
 function Navbar (props: any) {
   return (
-    <nav className="navbar navbar-expand-sm navbar-light bg-light">
+    <nav
+      className={
+        'navbar navbar-expand-sm ' +
+        (props.theme === 'light'
+          ? 'navbar-light bg-light'
+          : 'navbar-dark bg-dark')
+      }
+      style={{ transition: 'all 0.25s linear' }}
+    >
       <Link to="/" className="navbar-brand">
         Nigel Lee
       </Link>
