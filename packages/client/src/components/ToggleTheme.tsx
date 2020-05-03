@@ -10,7 +10,7 @@ const Toggle = ({ theme, toggleTheme }: any) => {
         type="checkbox"
         className="custom-control-input"
         id="customSwitch1"
-        checked={theme !== 'light'}
+        checked={theme === 'light'}
         onClick={toggleTheme}
       />
       <label className="custom-control-label" htmlFor="customSwitch1">
