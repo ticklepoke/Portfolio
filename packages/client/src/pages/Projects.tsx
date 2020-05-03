@@ -1,5 +1,13 @@
-import React from 'react'
+import React, { Fragment } from 'react'
+import HelmetWrapper from '../common/HelmetWrapper'
 
 export default function Projects () {
-  return <div>Projects</div>
+  return (
+    <Fragment>
+      <HelmetWrapper
+        title="Projects | Nigel Lee"
+        description="React, Angular, JavaScript, Docker, Kubernetes, Google Cloud platform developer"
+      />
+    </Fragment>
+  )
 }

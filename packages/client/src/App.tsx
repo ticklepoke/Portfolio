@@ -1,16 +1,20 @@
 import React, { Suspense, lazy } from 'react'
 import { Route, Switch, BrowserRouter as Router } from 'react-router-dom'
 import ErrorBoundary from './common/ErrorBoundary'
+import Navbar from './components/Navbar'
+import Loading from './common/Loading'
 
 const HomeLazy = lazy(() => import('./pages/Home'))
 const ExperienceLazy = lazy(() => import('./pages/Experience'))
+const ProjectsLazy = lazy(() => import('./pages/Projects'))
+const NotFoundLazy = lazy(() => import('./pages/NotFound'))
 
 function App () {
   return (
     <ErrorBoundary>
-      <Suspense fallback={<span>Loading...</span>}>
-        <Router>
-          <h1>Header</h1>
+      <Router>
+        <Navbar />
+        <Suspense fallback={<Loading />}>
           <Switch>
             <Route path="/" exact>
               <HomeLazy />
@@ -18,9 +22,15 @@ function App () {
             <Route path="/experience" exact>
               <ExperienceLazy />
             </Route>
+            <Route path="/projects" exact>
+              <ProjectsLazy />
+            </Route>
+            <Route>
+              <NotFoundLazy />
+            </Route>
           </Switch>
-        </Router>
-      </Suspense>
+        </Suspense>
+      </Router>
     </ErrorBoundary>
   )
 }
