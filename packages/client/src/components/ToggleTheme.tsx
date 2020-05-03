@@ -1,9 +1,11 @@
 import React from 'react'
 
 const Toggle = ({ theme, toggleTheme }: any) => {
-  console.log(theme)
   return (
-    <div className="custom-control custom-switch">
+    <div
+      className="custom-control custom-switch position-absolute"
+      style={{ right: '15px', bottom: '15px' }}
+    >
       <input
         type="checkbox"
         className="custom-control-input"
