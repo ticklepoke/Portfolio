@@ -1,0 +1,12 @@
+.toggle-button-position {
+  right: 20px;
+  top: 20px;
+}
+
+@media (max-width: 575.98px) {
+  .toggle-button-position {
+    position: relative;
+    right: auto;
+    top: auto;
+  }
+}

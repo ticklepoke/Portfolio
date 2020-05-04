@@ -7,8 +7,8 @@ import ErrorBoundary from './common/ErrorBoundary'
 import Navbar from './components/Navbar'
 import Loading from './common/Loading'
 import { GlobalStyles } from './common/GlobalStyle'
-import Toggle from './components/ToggleTheme'
 import { useDarkMode } from './common/useDarkMode'
+import Footer from './components/Footer'
 
 const HomeLazy = lazy(() => import('./pages/Home'))
 const ExperienceLazy = lazy(() => import('./pages/Experience'))
@@ -28,24 +28,26 @@ function App () {
       <ErrorBoundary>
         <GlobalStyles />
         <Router>
-          <Navbar theme={theme} />
-          <Toggle theme={theme} toggleTheme={toggleTheme} />
-          <Suspense fallback={<Loading />}>
-            <Switch>
-              <Route path="/" exact>
-                <HomeLazy />
-              </Route>
-              <Route path="/experience" exact>
-                <ExperienceLazy />
-              </Route>
-              <Route path="/projects" exact>
-                <ProjectsLazy />
-              </Route>
-              <Route>
-                <NotFoundLazy />
-              </Route>
-            </Switch>
-          </Suspense>
+          <div style={{ minHeight: 'calc(100vh - 100px)' }}>
+            <Navbar theme={theme} toggleTheme={toggleTheme} />
+            <Suspense fallback={<Loading />}>
+              <Switch>
+                <Route path="/" exact>
+                  <HomeLazy />
+                </Route>
+                <Route path="/experience" exact>
+                  <ExperienceLazy />
+                </Route>
+                <Route path="/projects" exact>
+                  <ProjectsLazy />
+                </Route>
+                <Route>
+                  <NotFoundLazy />
+                </Route>
+              </Switch>
+            </Suspense>
+          </div>
+          <Footer />
         </Router>
       </ErrorBoundary>
     </ThemeProvider>
