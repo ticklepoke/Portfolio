@@ -14,14 +14,14 @@ export default function Home () {
             <img
               src={require('../assets/profile.jpg')}
               alt="Profile"
-              className="profile-img mb-5"
+              className="profile-img my-5"
             />
           </div>
           <h1 className="text-white">Nigel Lee</h1>
           <h3 className="mt-3 text-white text-none">
             Self-learning software development and web technologies.
           </h3>
-          <h3 className="mt-3 text-white text-none">
+          <h3 className="my-3 text-white text-none">
             Renaissance Engineering Program Undergraduate.
           </h3>
         </div>
