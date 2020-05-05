@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0](https://github.com/ticklepoke/Portfolio/compare/v0.3.0...v0.4.0) (2020-05-05)
+
+
+### Bug Fixes
+
+* **Fixed spinner:** Spinner ([59796d6](https://github.com/ticklepoke/Portfolio/commit/59796d649f423e9db184b752e0dda4de2872cb0d))
+* **Fixed toggle:** Toggle ([925eb40](https://github.com/ticklepoke/Portfolio/commit/925eb40b2ccebc4e0ea611e4b464379f291aaede))
+* **Webp:** Uploaded webp images ([7020088](https://github.com/ticklepoke/Portfolio/commit/7020088ef85f0df13c34294fd1d355387169862b))
+
+
+### Features
+
+* **Footer, toggle:** Added footer, reposition toggle ([0e41945](https://github.com/ticklepoke/Portfolio/commit/0e419451098a39d3d741d095716f409b90c49e39))
+* **Profile pic:** Added profile picture ([ea4f102](https://github.com/ticklepoke/Portfolio/commit/ea4f1021765295626f275122788d5613920d557c))
+
+
+
+
+
 # [0.3.0](https://github.com/ticklepoke/Portfolio/compare/v0.2.0...v0.3.0) (2020-05-03)
 
 
