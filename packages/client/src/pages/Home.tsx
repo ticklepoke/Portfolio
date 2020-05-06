@@ -33,6 +33,20 @@ export default function Home () {
           </h3>
         </div>
       </div>
+      <div className="container d-flex align-items-center">
+        <div className="py-5">
+          <h2 className="pb-4">Education</h2>
+          <p className="lead">
+            I&lsquo;m a Raffles Institution alumni and current C.S.
+            undergraduate at Nanyang Technological University. I&lsquo;m also a
+            student with the university&lsquo;s Renaissance Engineering Program.
+          </p>
+          <p className="lead">
+            I hope to graduate with a B.EngSc. (Computer Science with a Minor in
+            Mathematics) and M.Sc. (Technology Management) by Winter 2022.
+          </p>
+        </div>
+      </div>
     </Fragment>
   )
 }
