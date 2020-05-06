@@ -2,13 +2,20 @@ import React, { Fragment } from 'react'
 import HelmetWrapper from '../common/HelmetWrapper'
 import './Home.css'
 export default function Home () {
+  const platform = window.navigator.platform
+  const platforms = ['iPhone', 'iPad', 'MacIntel']
   return (
     <Fragment>
       <HelmetWrapper
         title="Home | Nigel Lee"
         description="Computer Science student from Singapore, actively looking for software internships. Renaissance Engineering Program Student."
       />
-      <div className="bg-main">
+      <div
+        className={
+          (platforms.includes(platform) ? 'bg-apple' : 'bg-android') +
+          ' bg-main'
+        }
+      >
         <div className="container min-vh-90 d-flex flex-column justify-content-center align-items-baseline text-white">
           <div className="w-100">
             <img
@@ -24,6 +31,20 @@ export default function Home () {
           <h3 className="my-3 text-white text-none">
             Renaissance Engineering Program Undergraduate.
           </h3>
+        </div>
+      </div>
+      <div className="container d-flex align-items-center">
+        <div className="py-5">
+          <h2 className="pb-4">Education</h2>
+          <p className="lead">
+            I&lsquo;m a Raffles Institution alumni and current C.S.
+            undergraduate at Nanyang Technological University. I&lsquo;m also a
+            student with the university&lsquo;s Renaissance Engineering Program.
+          </p>
+          <p className="lead">
+            I hope to graduate with a B.EngSc. (Computer Science with a Minor in
+            Mathematics) and M.Sc. (Technology Management) by Winter 2022.
+          </p>
         </div>
       </div>
     </Fragment>
