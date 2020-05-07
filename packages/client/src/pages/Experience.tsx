@@ -24,7 +24,7 @@ export default function Experience () {
         title="Experiences | Nigel Lee"
         description="SG Innovate Summation Program Apprentice, DBS Unicorn+ Tech Intern, Renaissance Engineering Program Student"
       />
-      <div className="container my-5">
+      <div className="container my-5" data-aos="fade">
         <h1>Experience</h1>
         <h3 className="my-5">
           I&lsquo;ve worked at a few places and am eager for more opportunities.
