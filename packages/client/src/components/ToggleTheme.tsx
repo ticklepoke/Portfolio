@@ -3,7 +3,7 @@ import './ToggleTheme.css'
 
 const Toggle = ({ theme, toggleTheme }: any) => {
   return (
-    <div className="custom-control custom-switch pt-2 toggle-button-position">
+    <div className="custom-control custom-switch pt-2">
       <input
         type="checkbox"
         className="custom-control-input"
