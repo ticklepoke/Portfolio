@@ -1,0 +1,36 @@
+.profile-img {
+  border-radius: 50%;
+  max-height: 30vh;
+}
+
+.bg-android {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../assets/bg.webp");
+}
+
+.bg-apple {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../assets/bg\ \(1\).jpg");
+}
+
+.bg-main {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media (max-width: 575.98px) {
+  .profile-img {
+    display: block;
+    margin: 0 auto;
+    max-height: 25vh;
+  }
+}
+
+.text-none {
+  text-transform: none !important;
+}
+
+.min-vh-90 {
+  min-height: 90vh;
+}

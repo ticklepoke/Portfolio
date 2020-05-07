@@ -1,6 +1,6 @@
 {
   "name": "@portfolio/client",
-  "version": "0.1.1",
+  "version": "0.4.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
@@ -10,9 +10,15 @@
     "@types/node": "^12.12.37",
     "@types/react": "^16.9.34",
     "@types/react-dom": "^16.9.7",
+    "@types/react-router-dom": "^5.1.5",
+    "aos": "^3.0.0-beta.6",
+    "bootswatch": "^4.4.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-helmet": "^6.0.0",
+    "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.1",
+    "styled-components": "^5.1.0",
     "typescript": "^3.7.5"
   },
   "scripts": {
@@ -40,6 +46,9 @@
     ]
   },
   "devDependencies": {
+    "@types/aos": "^3.0.3",
+    "@types/react-helmet": "^5.0.15",
+    "@types/styled-components": "^5.1.0",
     "@typescript-eslint/eslint-plugin": "^2.30.0",
     "@typescript-eslint/parser": "^2.30.0",
     "eslint": "^6.8.0",
@@ -60,8 +69,7 @@
   },
   "lint-staged": {
     "*.{js,ts,tsx}": [
-      "npm run lint:fix",
-      "npm run test:nowatch"
+      "npm run lint:fix"
     ]
   }
 }

@@ -44,6 +44,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 ### Bug Fixes
 
 * **app.tsx:** Hello world ([32fc8cc](https://github.com/ticklepoke/Portfolio/commit/32fc8cc99fe9cbee8542e9727a5092688bb28b71))
+* **Syntax error:** Fixed syntax error ([bc39058](https://github.com/ticklepoke/Portfolio/commit/bc39058d8acd6b612eb1f84edd3bc50038639429))
 
 
 ### Features
@@ -53,11 +54,3 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 * **Head wrapper:** Added head wrapper ([56bb5eb](https://github.com/ticklepoke/Portfolio/commit/56bb5eb130961ca99d992dfab06dbf70d5966814))
 * **redirects:** Added redirects ([e031584](https://github.com/ticklepoke/Portfolio/commit/e031584c28c2f5cb6078ee226845aef7f9b5a5d5))
 * **router:** Added router, pages, lazy loading ([eccb571](https://github.com/ticklepoke/Portfolio/commit/eccb571fcaf07f89313b9ad2f422fc0e65e9f34c))
-
-
-
-
-
-## [0.1.1](https://github.com/ticklepoke/Portfolio/compare/v1.0.0...v0.1.1) (2020-05-02)
-
-**Note:** Version bump only for package @portfolio/client
