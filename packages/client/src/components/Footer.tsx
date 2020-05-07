@@ -7,10 +7,10 @@ export default function Footer () {
         <span>Stay Connected</span>
       </div>
       <div className="d-flex justify-content-around p-3">
-        <a href="/">Email</a>
-        <a href="/">Github</a>
-        <a href="/">Medium</a>
-        <a href="/">LinkedIn</a>
+        <a href="mailto:lee.nigel@hotmail.com">Email</a>
+        <a href="https://github.com/ticklepoke">Github</a>
+        <a href="https://medium.com/@nigggel.lee">Medium</a>
+        <a href="https://www.linkedin.com/in/nigel-lee-singapore/">LinkedIn</a>
       </div>
     </div>
   )

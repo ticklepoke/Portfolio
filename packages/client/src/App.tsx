@@ -10,6 +10,12 @@ import { GlobalStyles } from './common/GlobalStyle'
 import { useDarkMode } from './common/useDarkMode'
 import Footer from './components/Footer'
 
+import AOS from 'aos'
+import 'aos/dist/aos.css' // You can also use <link> for styles
+AOS.init({
+  duration: 800
+})
+
 const HomeLazy = lazy(() => import('./pages/Home'))
 const ExperienceLazy = lazy(() => import('./pages/Experience'))
 const ProjectsLazy = lazy(() => import('./pages/Projects'))

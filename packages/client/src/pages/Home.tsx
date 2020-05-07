@@ -15,8 +15,12 @@ export default function Home () {
           (platforms.includes(platform) ? 'bg-apple' : 'bg-android') +
           ' bg-main'
         }
+        data-aos="fade"
       >
-        <div className="container min-vh-90 d-flex flex-column justify-content-center align-items-baseline text-white">
+        <div
+          data-aos="fade"
+          className="container min-vh-90 d-flex flex-column justify-content-center align-items-baseline text-white"
+        >
           <div className="w-100">
             <img
               src={require('../assets/profile.jpg')}
@@ -33,7 +37,7 @@ export default function Home () {
           </h3>
         </div>
       </div>
-      <div className="container d-flex align-items-center">
+      <div data-aos="fade" className="container d-flex align-items-center">
         <div className="py-5">
           <h2 className="pb-4">Education</h2>
           <p className="lead">
