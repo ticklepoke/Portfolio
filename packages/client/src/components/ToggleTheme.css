@@ -1,12 +1,22 @@
 .toggle-button-position {
-  right: 20px;
-  top: 30px;
+  position: fixed;
+  /* right: 20px; */
+  /* right: 20px;
+  top: 30px; */
+}
+
+.buttons-container {
+  flex-direction: row;
 }
 
 @media (max-width: 575.98px) {
   .toggle-button-position {
-    position: relative;
+    position: static !important;
     right: auto;
     top: auto;
+  }
+
+  .buttons-container {
+    flex-direction: column !important;
   }
 }

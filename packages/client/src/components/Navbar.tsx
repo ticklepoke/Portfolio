@@ -29,32 +29,34 @@ function Navbar (props: any) {
       </button>
 
       <div className="collapse navbar-collapse" id="navbarColor03">
-        <ul className="navbar-nav mr-auto">
+        <ul className="navbar-nav d-flex w-100 justify-content-between">
+          <div className="d-flex buttons-container">
+            <li className="nav-item">
+              <Link
+                to="/experience"
+                className={
+                  props.history.location.pathname === '/experience'
+                    ? 'nav-link active'
+                    : 'nav-link'
+                }
+              >
+                Experience <span className="sr-only">(current)</span>
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+                to="/projects"
+                className={
+                  props.history.location.pathname === '/projects'
+                    ? 'nav-link active'
+                    : 'nav-link'
+                }
+              >
+                Projects
+              </Link>
+            </li>
+          </div>
           <li className="nav-item">
-            <Link
-              to="/experience"
-              className={
-                props.history.location.pathname === '/experience'
-                  ? 'nav-link active'
-                  : 'nav-link'
-              }
-            >
-              Experience <span className="sr-only">(current)</span>
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link
-              to="/projects"
-              className={
-                props.history.location.pathname === '/projects'
-                  ? 'nav-link active'
-                  : 'nav-link'
-              }
-            >
-              Projects
-            </Link>
-          </li>
-          <li>
             <Toggle theme={props.theme} toggleTheme={props.toggleTheme} />
           </li>
         </ul>
