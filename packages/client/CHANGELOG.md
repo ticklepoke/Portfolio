@@ -3,6 +3,29 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.5.0](https://github.com/ticklepoke/Portfolio/compare/v0.4.0...v0.5.0) (2020-05-10)
+
+
+### Bug Fixes
+
+* **Background:** Fixed background bug where bg did not render apple ([24bd2b9](https://github.com/ticklepoke/Portfolio/commit/24bd2b9484b916a7474e8bd81a40bbe381bd03bd))
+* **button:** button position ([0230364](https://github.com/ticklepoke/Portfolio/commit/0230364adc111297a7e496938254514e0276ef14))
+* **Fixed button:** Fixed navbar and button positioning ([662e9e5](https://github.com/ticklepoke/Portfolio/commit/662e9e5d878af1e7f7ed547b7ff4314fdcc54c66))
+
+
+### Features
+
+* Home ([862b9ae](https://github.com/ticklepoke/Portfolio/commit/862b9ae5c355c68691f15167dd7e9d34dc1fe7da))
+* **Added AOS:** added aos ([f5ef075](https://github.com/ticklepoke/Portfolio/commit/f5ef0751c11e4f23a88f8c36cab7c9e486058293))
+* **Experience:** Added experience page ([c6b19fd](https://github.com/ticklepoke/Portfolio/commit/c6b19fdca5bb3d5d46bc2d8c9df570d0d275e6e6))
+* **Footer links:** Added footer links ([72230d4](https://github.com/ticklepoke/Portfolio/commit/72230d4e3375702c9bd3e6e4eb80c55378281edb))
+* **Projects:** Added projects ([a3eed3a](https://github.com/ticklepoke/Portfolio/commit/a3eed3a14c4433f3586db5c5046946e9905877c6))
+* **Toggle:** Reposition toggle ([a606d65](https://github.com/ticklepoke/Portfolio/commit/a606d65a9f28f28b6db03576b8e5210af0a62ae6))
+
+
+
+
+
 # [0.4.0](https://github.com/ticklepoke/Portfolio/compare/v0.3.0...v0.4.0) (2020-05-05)
 
 
