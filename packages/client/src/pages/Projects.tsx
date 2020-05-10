@@ -6,6 +6,7 @@ const renderLinks = (links: Url[]) => {
   const linkElement = links.map(link => {
     return (
       <a
+        key={link.domain}
         href={link.url}
         target="_blank"
         rel="noopener noreferrer"
