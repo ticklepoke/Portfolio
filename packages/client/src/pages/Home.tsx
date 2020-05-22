@@ -2,21 +2,13 @@ import React, { Fragment } from 'react'
 import HelmetWrapper from '../common/HelmetWrapper'
 import './Home.css'
 export default function Home () {
-  const platform = window.navigator.platform
-  const platforms = ['iPhone', 'iPad', 'MacIntel']
   return (
     <Fragment>
       <HelmetWrapper
         title="Home | Nigel Lee"
         description="Computer Science student from Singapore, actively looking for software internships. Renaissance Engineering Program Student."
       />
-      <div
-        className={
-          (platforms.includes(platform) ? 'bg-apple' : 'bg-android') +
-          ' bg-main'
-        }
-        data-aos="fade"
-      >
+      <div className={'bg bg-main'} data-aos="fade">
         <div
           data-aos="fade"
           className="container min-vh-90 d-flex flex-column justify-content-center align-items-baseline text-white"
