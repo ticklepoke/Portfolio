@@ -1,5 +1,10 @@
 import React, { Suspense, lazy } from 'react'
-import { Route, Switch, BrowserRouter as Router } from 'react-router-dom'
+import {
+  Route,
+  Switch,
+  BrowserRouter as Router,
+  Redirect
+} from 'react-router-dom'
 import { ThemeProvider } from 'styled-components'
 
 import { lightTheme, darkTheme } from './common/Theme'
@@ -46,6 +51,9 @@ function App () {
                 </Route>
                 <Route path="/projects" exact>
                   <ProjectsLazy />
+                </Route>
+                <Route path="/home" exact>
+                  <Redirect to="/" />
                 </Route>
                 <Route>
                   <NotFoundLazy />
