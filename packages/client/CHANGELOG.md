@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.6.0](https://github.com/ticklepoke/Portfolio/compare/v0.5.0...v0.6.0) (2020-05-26)
+
+
+### Bug Fixes
+
+* **key:** missing key ([d937be4](https://github.com/ticklepoke/Portfolio/commit/d937be4ca8cae4abdd9002e253865151493d1b68))
+
+
+### Features
+
+* **Headers:** Added rich link headers ([4534477](https://github.com/ticklepoke/Portfolio/commit/4534477e62eaa84b2566152d3b6560bf56260821))
+* **index html:** Added async css ([207bf69](https://github.com/ticklepoke/Portfolio/commit/207bf6919570663421aa96117abc77b7030df41a))
+* **Service worker:** Added service worker ([1c9c438](https://github.com/ticklepoke/Portfolio/commit/1c9c4388350ca5a35befb1fd855c74949dc49517))
+* **Workflow:** Changed worflow to gzip ([4409445](https://github.com/ticklepoke/Portfolio/commit/4409445427b95d517e6656e8c572bb58e47eb6db))
+
+
+
+
+
 # [0.5.0](https://github.com/ticklepoke/Portfolio/compare/v0.4.0...v0.5.0) (2020-05-10)
 
 
