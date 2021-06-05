@@ -12,16 +12,16 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Install dependencies
-        run: cd ./packages/client && npm i
+        run: cd ./packages/client && yarn install
 
       - name: Test
-        run: cd ./packages/client && npm run test --watchAll=false
+        run: cd ./packages/client && yarn install test --watchAll=false
 
       - name: Lint
-        run: cd ./packages/client && npm run lint
+        run: cd ./packages/client && yarn install lint
 
       - name: Build static files
-        run: cd ./packages/client && npm run build --if-present
+        run: cd ./packages/client && yarn install build --if-present
 
       - name: Deploy to netlify
         uses: netlify/actions/cli@master

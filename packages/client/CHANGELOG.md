@@ -3,6 +3,37 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.8.0](https://github.com/ticklepoke/Portfolio/compare/v0.7.1...v0.8.0) (2021-06-05)
+
+
+### Features
+
+* **css:** Add new stylesheet ([196a33a](https://github.com/ticklepoke/Portfolio/commit/196a33a87418cb5df7c2f2d66ea0d5cf1f04d754))
+
+
+
+
+
+## [0.7.1](https://github.com/ticklepoke/Portfolio/compare/v0.7.0...v0.7.1) (2021-06-05)
+
+**Note:** Version bump only for package @portfolio/client
+
+
+
+
+
+# [0.7.0](https://github.com/ticklepoke/Portfolio/compare/v0.6.0...v0.7.0) (2021-06-05)
+
+
+### Features
+
+* **Added home redirect:** Home redirect ([fc29aa6](https://github.com/ticklepoke/Portfolio/commit/fc29aa65615b3651b1ce6343620635731e3617f5))
+* **head:** Changed Profile open graph ([0663d52](https://github.com/ticklepoke/Portfolio/commit/0663d522bb55424788dca9251beee3b977d3f8d1))
+
+
+
+
+
 # [0.6.0](https://github.com/ticklepoke/Portfolio/compare/v0.5.0...v0.6.0) (2020-05-26)
 
 

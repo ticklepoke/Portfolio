@@ -1,76 +1,78 @@
 {
-    "name": "@portfolio/client",
-    "version": "0.6.0",
-    "private": true,
-    "dependencies": {
-        "@testing-library/jest-dom": "^4.2.4",
-        "@testing-library/react": "^9.5.0",
-        "@testing-library/user-event": "^7.2.1",
-        "@types/jest": "^24.9.1",
-        "@types/node": "^12.12.37",
-        "@types/react": "^16.9.34",
-        "@types/react-dom": "^16.9.7",
-        "@types/react-router-dom": "^5.1.5",
-        "aos": "^3.0.0-beta.6",
-        "bootswatch": "^4.4.1",
-        "react": "^16.13.1",
-        "react-dom": "^16.13.1",
-        "react-helmet": "^6.0.0",
-        "react-router-dom": "^5.1.2",
-        "react-scripts": "3.4.1",
-        "styled-components": "^5.1.0",
-        "typescript": "^3.7.5"
-    },
-    "scripts": {
-        "start": "react-scripts start",
-        "build": "react-scripts build",
-        "postbuild": "npx gzipper ./build ./gzipped",
-        "test": "react-scripts test",
-        "test:nowatch": "react-scripts test --watchAll=false",
-        "eject": "react-scripts eject",
-        "lint": "eslint '**/*.{js,ts,tsx}'",
-        "lint:fix": "prettier-eslint \"$(pwd)/**/*.{ts,js,tsx}\" --write"
-    },
-    "eslintConfig": {
-        "extends": "react-app"
-    },
-    "browserslist": {
-        "production": [
-            ">0.2%",
-            "not dead",
-            "not op_mini all"
-        ],
-        "development": [
-            "last 1 chrome version",
-            "last 1 firefox version",
-            "last 1 safari version"
-        ]
-    },
-    "devDependencies": {
-        "@types/aos": "^3.0.3",
-        "@types/react-helmet": "^5.0.15",
-        "@types/styled-components": "^5.1.0",
-        "@typescript-eslint/eslint-plugin": "^2.30.0",
-        "@typescript-eslint/parser": "^2.30.0",
-        "eslint": "^6.8.0",
-        "eslint-config-standard": "^14.1.1",
-        "eslint-plugin-import": "^2.20.2",
-        "eslint-plugin-node": "^11.1.0",
-        "eslint-plugin-promise": "^4.2.1",
-        "eslint-plugin-react": "^7.19.0",
-        "eslint-plugin-standard": "^4.0.1",
-        "husky": "^4.2.5",
-        "lint-staged": "^10.2.2",
-        "prettier-eslint-cli": "^5.0.0"
-    },
-    "husky": {
-        "hooks": {
-            "pre-commit": "lint-staged"
-        }
-    },
-    "lint-staged": {
-        "*.{js,ts,tsx}": [
-            "npm run lint:fix"
-        ]
+  "name": "@portfolio/client",
+  "version": "0.8.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
+    "@types/jest": "^24.9.1",
+    "@types/node": "^12.12.37",
+    "@types/react": "^16.9.34",
+    "@types/react-dom": "^16.9.7",
+    "@types/react-router-dom": "^5.1.5",
+    "aos": "^3.0.0-beta.6",
+    "bootswatch": "^4.4.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-helmet": "^6.0.0",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.4.1",
+    "styled-components": "^5.1.0",
+    "typescript": "^3.7.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "postbuild": "gzipper compress ./build ./gzipped",
+    "test": "react-scripts test",
+    "test:nowatch": "react-scripts test --watchAll=false",
+    "eject": "react-scripts eject",
+    "lint": "eslint '**/*.{js,ts,tsx}'",
+    "lint:fix": "prettier-eslint \"$(pwd)/**/*.{ts,js,tsx}\" --write",
+    "fetch:stars": "echo 'unimplemented!'"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/aos": "^3.0.3",
+    "@types/react-helmet": "^5.0.15",
+    "@types/styled-components": "^5.1.0",
+    "@typescript-eslint/eslint-plugin": "^2.30.0",
+    "@typescript-eslint/parser": "^2.30.0",
+    "eslint": "^6.8.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-standard": "^4.0.1",
+    "gzipper": "^4.5.0",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.2",
+    "prettier-eslint-cli": "^5.0.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
     }
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx}": [
+      "yarn run lint:fix"
+    ]
+  }
 }

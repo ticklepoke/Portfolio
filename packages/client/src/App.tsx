@@ -26,6 +26,8 @@ const ExperienceLazy = lazy(() => import('./pages/Experience'))
 const ProjectsLazy = lazy(() => import('./pages/Projects'))
 const NotFoundLazy = lazy(() => import('./pages/NotFound'))
 
+const InlineHomeLazy = lazy(() => import('./pages/InlineHome'))
+
 function App () {
   const [theme, toggleTheme, componentMounted] = useDarkMode()
   const themeMode = theme === 'light' ? lightTheme : darkTheme
@@ -40,20 +42,30 @@ function App () {
         <GlobalStyles />
         <Router>
           <div style={{ minHeight: 'calc(100vh - 100px)' }}>
-            <Navbar theme={theme} toggleTheme={toggleTheme} />
             <Suspense fallback={<Loading />}>
               <Switch>
                 <Route path="/" exact>
+                  <InlineHomeLazy theme={theme} toggleTheme={toggleTheme} />
+                </Route>
+                <Route path="/depr" exact>
+                  <Navbar theme={theme} toggleTheme={toggleTheme} />
                   <HomeLazy />
+                  <Footer />
                 </Route>
-                <Route path="/experience" exact>
+                <Route path="/depr/experience" exact>
+                  <Navbar theme={theme} toggleTheme={toggleTheme} />
                   <ExperienceLazy />
+                  <Footer />
                 </Route>
-                <Route path="/projects" exact>
+                <Route path="/depr/projects" exact>
+                  <Navbar theme={theme} toggleTheme={toggleTheme} />
                   <ProjectsLazy />
+                  <Footer />
                 </Route>
-                <Route path="/home" exact>
-                  <Redirect to="/" />
+                <Route path="/depr/home" exact>
+                  <Navbar theme={theme} toggleTheme={toggleTheme} />
+                  <Redirect to="/depr" />
+                  <Footer />
                 </Route>
                 <Route>
                   <NotFoundLazy />
@@ -61,7 +73,6 @@ function App () {
               </Switch>
             </Suspense>
           </div>
-          <Footer />
         </Router>
       </ErrorBoundary>
     </ThemeProvider>
