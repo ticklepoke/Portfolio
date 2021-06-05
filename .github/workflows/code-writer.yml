@@ -10,7 +10,7 @@ on:
   #     tags:
   #       description: "Test scenario tags"
   schedule:
-    - cron: "*/2 * * * *"
+    - cron: "*/5 * * * *"
   # - cron: "0 0 * * 1"
 
 jobs:
