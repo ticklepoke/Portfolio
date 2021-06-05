@@ -22,7 +22,17 @@ Start the react app
 yarn start
 ```
 
-## Cutting a Release
+## Versioning
 
-`unimplemented`
+Commits are done using:
+
+```sh
+yarn commit
+```
+
+To tag a new version, run:
+
+```sh
+yarn new-version
+```
 
