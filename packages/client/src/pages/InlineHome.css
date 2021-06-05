@@ -3,3 +3,9 @@
   top: 1rem;
   right: 1rem;
 }
+
+.tech-icon {
+  height: 1.4rem;
+  object-fit: contain;
+  filter: grayscale(100%);
+}

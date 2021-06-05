@@ -13,7 +13,7 @@ function Navbar (props: any) {
       }
       style={{ transition: 'all 0.25s linear' }}
     >
-      <Link to="/" className="navbar-brand">
+      <Link to="/depr" className="navbar-brand">
         Nigel Lee
       </Link>
       <button
@@ -33,7 +33,7 @@ function Navbar (props: any) {
           <div className="d-flex buttons-container">
             <li className="nav-item">
               <Link
-                to="/experience"
+                to="/depr/experience"
                 className={
                   props.history.location.pathname === '/experience'
                     ? 'nav-link active'
@@ -45,7 +45,7 @@ function Navbar (props: any) {
             </li>
             <li className="nav-item">
               <Link
-                to="/projects"
+                to="/depr/projects"
                 className={
                   props.history.location.pathname === '/projects'
                     ? 'nav-link active'
