@@ -1,4 +1,4 @@
-import React, { FunctionComponent } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 import Toggle, { ToggleThemeProps } from '../components/ToggleTheme'
 import { InlineHomeData } from '../_data/InlineHome'
@@ -47,9 +47,11 @@ function InlineHome ({ theme, toggleTheme }: InlineHomeProps) {
               Technologies Used:{' '}
               {technologies.map(({ title, icon }) => (
                 <img
+                  key={title}
                   className="tech-icon mx-1"
                   src={require('../assets/icons/' + icon)}
                   title={title}
+                  alt={title}
                 />
               ))}
             </span>
