@@ -1,0 +1,40 @@
+{
+  "name": "codewriter",
+  "version": "0.8.0",
+  "description": "> TODO: description",
+  "author": "ticklepoke <lee.nigel@hotmail.com>",
+  "homepage": "https://github.com/ticklepoke/Portfolio#readme",
+  "license": "MIT",
+  "main": "lib/codeWriter.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.yarnpkg.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ticklepoke/Portfolio.git"
+  },
+  "scripts": {
+    "fetch-repo": "ts-node lib/codeWriter.ts"
+  },
+  "bugs": {
+    "url": "https://github.com/ticklepoke/Portfolio/issues"
+  },
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "prettier": "^2.3.0",
+    "ts-node": "^10.0.0",
+    "typescript": "^4.3.2"
+  },
+  "devDependencies": {
+    "@types/node": "^15.12.1",
+    "@types/prettier": "^2.2.3",
+    "axios": "^0.21.1"
+  }
+}

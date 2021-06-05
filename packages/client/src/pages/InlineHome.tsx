@@ -1,14 +1,54 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import HelmetWrapper from '../common/HelmetWrapper';
 import Toggle, { ToggleThemeProps } from '../components/ToggleTheme';
-import { InlineHomeData } from '../_data/InlineHome';
+import * as inlineHomeData from '../_data/InlineHome.json';
 
 import './InlineHome.css';
 
-const { titleBar, about, work, project, education, weekends } = InlineHomeData;
+interface InlineHomeData {
+	titleBar: {
+		name: {
+			en: string;
+			cn: string;
+		};
+		links: { title: string; body: string; href: string }[];
+	};
+	about: string[];
+	work: {
+		company: string;
+		title: string;
+		period: string;
+		description: string;
+		technologies: { title: string; icon: string }[];
+	}[];
+	project: {
+		title: string;
+		description: string;
+		tags: string[];
+		languages: { title: string; logo: string }[];
+		github: string;
+		stars: number;
+	}[];
+	education: {
+		category: string;
+		courses: {
+			code: string;
+			title: string;
+		}[];
+	}[];
+	weekends: string[];
+}
+
+const { titleBar, about, work, project, education, weekends } = (inlineHomeData as unknown) as InlineHomeData;
+
 function InlineHome({ theme, toggleTheme }: ToggleThemeProps) {
 	return (
 		<>
+			<HelmetWrapper
+				title="Home | Nigel Lee"
+				description="Computer Science student from Singapore, actively looking for software internships. Renaissance Engineering Program Student."
+			/>
 			<div className="m-3" style={{ minHeight: 'calc(100vh - 70px)', maxWidth: '1920px' }}>
 				<div className="d-md-flex d-sm-block justify-content-between">
 					<div>
