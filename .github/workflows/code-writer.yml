@@ -1,17 +1,17 @@
 name: Code Writer
 
 on:
-  workflow_dispatch:
-    inputs:
-      logLevel:
-        description: "Log level"
-        required: true
-        default: "warning"
-      tags:
-        description: "Test scenario tags"
-    # schedule:
-    # - cron: "* * * * *"
-    # - cron: "0 0 * * 1"
+  # workflow_dispatch:
+  #   inputs:
+  #     logLevel:
+  #       description: "Log level"
+  #       required: true
+  #       default: "warning"
+  #     tags:
+  #       description: "Test scenario tags"
+  schedule:
+    - cron: "*/2 * * * *"
+  # - cron: "0 0 * * 1"
 
 jobs:
   schedule:
@@ -27,3 +27,7 @@ jobs:
 
       - name: Make PR
         uses: peter-evans/create-pull-request@v3
+        with:
+          branch: automated/repo
+          delete-branch: true
+          title: automated/repo
