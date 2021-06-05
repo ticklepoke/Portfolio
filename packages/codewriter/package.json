@@ -21,12 +21,14 @@
     "url": "git+https://github.com/ticklepoke/Portfolio.git"
   },
   "scripts": {
-    "fetch-repo": "ts-node lib/codeWriter.ts"
+    "fetch-repo": "cross-env DEVELOPMENT=true ts-node lib/codeWriter.ts",
+    "prod:fetch-repo": "cross-env ts-node lib/codeWriter.ts"
   },
   "bugs": {
     "url": "https://github.com/ticklepoke/Portfolio/issues"
   },
   "dependencies": {
+    "cross-env": "^7.0.3",
     "dotenv": "^10.0.0",
     "prettier": "^2.3.0",
     "ts-node": "^10.0.0",

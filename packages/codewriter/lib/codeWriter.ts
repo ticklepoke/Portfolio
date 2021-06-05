@@ -5,8 +5,12 @@ import axios from "axios";
 import dotenv from "dotenv";
 
 const InlineHomeData = require("../../client/src/_data/InlineHome.json");
-dotenv.config({ path: path.resolve(__dirname, "keys.env") });
+if (process.env.DEVELOPMENT) {
+  console.log("dotenv");
+  dotenv.config({ path: path.resolve(__dirname, "keys.env") });
+}
 
+console.log(process.env.GH_TOKEN);
 async function codeWriter() {
   for (let project of InlineHomeData.project) {
     try {
@@ -36,6 +40,7 @@ async function codeWriter() {
 
       project.stars = stars.data.length;
       project.languages = formatted_language;
+      console.log("formatted");
     } catch (err) {
       console.error(err);
     }
