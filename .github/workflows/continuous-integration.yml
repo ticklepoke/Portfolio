@@ -14,16 +14,16 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Install dependencies
-        run: cd ./packages/client && npm ci
+        run: cd ./packages/client && yarn install
       
       - name: Test
-        run: cd ./packages/client && npm run test --watchAll=false
+        run: cd ./packages/client &&  yarn test --watchAll=false
       
       - name: Lint
-        run: cd ./packages/client && npm run lint
+        run: cd ./packages/client && yarn lint
         
       - name: Build
-        run: cd ./packages/client && npm run build
+        run: cd ./packages/client && yarn build
 
       - name: Remove build
         run: cd ./packages/client && rm -rf build
