@@ -5,7 +5,8 @@
     },
     "extends": [
         "plugin:react/recommended",
-        "standard"
+        "standard",
+        "prettier"
     ],
     "globals": {
         "Atomics": "readonly",
@@ -21,11 +22,14 @@
     },
     "plugins": [
         "react",
-        "@typescript-eslint"
+        "@typescript-eslint",
+        "prettier"
     ],
     "rules": {
         "no-unused-vars": "warn",
         "no-undef": "warn",
-        "eol-last": "off"
+        "eol-last": "off",
+        "prettier/prettier": "error",
+        "max-len": ["warn", {"code": 120}]
     }
 }

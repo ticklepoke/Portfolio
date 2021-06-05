@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyles = createGlobalStyle`
 *,
@@ -48,4 +48,4 @@ a, p, h1, h2, h3 {
     background: ${({ theme }: any) => theme.body};
     transition: all 0.25s linear; 
 }
-`
+`;
