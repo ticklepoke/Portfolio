@@ -27,3 +27,7 @@ jobs:
 
       - name: Make PR
         uses: peter-evans/create-pull-request@v3
+        with:
+          branch: automated/repo
+          delete-branch: true
+          title: automated/repo
