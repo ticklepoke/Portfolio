@@ -1,11 +1,49 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Toggle, { ToggleThemeProps } from '../components/ToggleTheme';
-import { InlineHomeData } from '../_data/InlineHome';
+import * as inlineHomeData from '../_data/InlineHome.json';
 
 import './InlineHome.css';
 
-const { titleBar, about, work, project, education, weekends } = InlineHomeData;
+const EXCLUDED_FILE_TYPE = ['Batchfile'];
+
+interface InlineHomeData {
+	titleBar: {
+		name: {
+			en: string;
+			cn: string;
+		};
+		links: { title: string; body: string; href: string }[];
+	};
+	about: string[];
+	work: {
+		company: string;
+		title: string;
+		period: string;
+		description: string;
+		technologies: { title: string; icon: string }[];
+	}[];
+	project: {
+		title: string;
+		description: string;
+		tags: string[];
+		languages: { title: string; logo: string }[];
+		github: string;
+		stars: number;
+	}[];
+	education: {
+		category: string;
+		courses: {
+			code: string;
+			title: string;
+		}[];
+	}[];
+	weekends: string[];
+}
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const { titleBar, about, work, project, education, weekends } = (inlineHomeData as any).default as InlineHomeData;
+
 function InlineHome({ theme, toggleTheme }: ToggleThemeProps) {
 	return (
 		<>
@@ -77,15 +115,17 @@ function InlineHome({ theme, toggleTheme }: ToggleThemeProps) {
 								</span>
 							))}
 							<p className="my-2">{description}</p>
-							{languages.map(({ title, logo }) => (
-								<img
-									className={`tech-icon ${theme === 'light' && 'grayscale'}`}
-									src={require('../assets/icons/' + logo)}
-									alt={title}
-									title={title}
-									key={title}
-								/>
-							))}
+							{languages
+								.filter((lang) => !EXCLUDED_FILE_TYPE.includes(lang.title))
+								.map(({ title, logo }) => (
+									<img
+										className={`tech-icon mx-1 ${theme === 'light' && 'grayscale'}`}
+										src={require('../assets/icons/' + logo)}
+										alt={title}
+										title={title}
+										key={title}
+									/>
+								))}
 							<span>&nbsp;&nbsp;&nbsp;|&nbsp;</span>
 							<a href={github} title="Github Repository">
 								<img
