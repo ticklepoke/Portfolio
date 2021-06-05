@@ -1,0 +1,19 @@
+.toggle-container {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+}
+
+.tech-icon {
+	height: 1.4rem;
+	object-fit: contain;
+}
+
+.star-icon {
+	height: 1rem;
+	object-fit: contain;
+}
+
+.grayscale {
+	filter: grayscale(100%);
+}
