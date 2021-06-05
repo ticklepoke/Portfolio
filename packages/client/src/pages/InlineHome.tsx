@@ -23,7 +23,7 @@ function InlineHome ({ theme, toggleTheme }: InlineHomeProps) {
               {titleBar.links.map(({ title, href, body }, idx) => (
                 <>
                   {title}: <a href={href}>{body}</a>
-                  {idx != titleBar.links.length - 1 && '\t|\t'}
+                  {idx !== titleBar.links.length - 1 && '\t|\t'}
                 </>
               ))}
             </h5>
@@ -32,12 +32,12 @@ function InlineHome ({ theme, toggleTheme }: InlineHomeProps) {
         </div>
         <hr />
         {about.map(line => (
-          <p dangerouslySetInnerHTML={{ __html: line }} />
+          <p key={line} dangerouslySetInnerHTML={{ __html: line }} />
         ))}
         <hr />
         <h3>Work Experience</h3>
         {work.map(({ company, title, period, description, technologies }) => (
-          <div className="mt-3 mb-4">
+          <div className="mt-3 mb-4" key={title}>
             <h5>
               <b>{company}</b>&nbsp;&nbsp;-&nbsp;&nbsp;{title}
             </h5>
