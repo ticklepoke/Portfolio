@@ -1,7 +1,13 @@
 import React from 'react'
+import { Theme, ToggleTheme } from '../common/useDarkMode'
 import './ToggleTheme.css'
 
-const Toggle = ({ theme, toggleTheme }: any) => {
+export interface ToggleThemeProps {
+  theme: Theme
+  toggleTheme: ToggleTheme
+}
+
+const Toggle = ({ theme, toggleTheme }: ToggleThemeProps) => {
   return (
     <div className="custom-control custom-switch pt-2">
       <input
