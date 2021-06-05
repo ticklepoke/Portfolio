@@ -22,6 +22,12 @@ Start the react app
 yarn start
 ```
 
+## Deploying
+
+To deploy to staging, make a pull request to `staging` branch
+
+To deploy to master, make a pull request to `master` branch
+
 ## Versioning
 
 Commits are done using:
