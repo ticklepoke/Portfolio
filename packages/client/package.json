@@ -24,7 +24,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "postbuild": "npx gzipper ./build ./gzipped",
+    "postbuild": "gzipper compress ./build ./gzipped",
     "test": "react-scripts test",
     "test:nowatch": "react-scripts test --watchAll=false",
     "eject": "react-scripts eject",
@@ -60,6 +60,7 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-react": "^7.19.0",
     "eslint-plugin-standard": "^4.0.1",
+    "gzipper": "^4.5.0",
     "husky": "^4.2.5",
     "lint-staged": "^10.2.2",
     "prettier-eslint-cli": "^5.0.0"
