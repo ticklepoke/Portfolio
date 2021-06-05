@@ -12,7 +12,6 @@ test('sample test', () => {
 	expect(true).toBeTruthy();
 });
 
-// test('Mounting root app', () => {
-//   const { getByText } = render(<App />)
-//   expect(getByText('Nigel Lee')).toBeInTheDocument()
-// })
+test('Mounting root app', () => {
+	expect(render(<App />)).toBeTruthy();
+});

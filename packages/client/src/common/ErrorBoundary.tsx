@@ -1,10 +1,18 @@
 import React, { Component, ErrorInfo } from 'react';
 
-export class ErrorBoundary extends Component<any, any> {
-	constructor(props: any) {
+interface ErrorBoundaryState {
+	error?: Error;
+}
+
+type ErrorBoundaryProps = {
+	children?: JSX.Element | JSX.Element[];
+};
+
+export class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundaryState> {
+	constructor(props: ErrorBoundaryProps) {
 		super(props);
 		this.state = {
-			error: null,
+			error: undefined,
 		};
 	}
 

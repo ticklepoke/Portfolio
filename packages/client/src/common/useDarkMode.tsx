@@ -1,13 +1,13 @@
 import { useEffect, useState } from 'react';
 
-export type Theme = string;
+export type Theme = 'light' | 'dark';
 export type ToggleTheme = () => void;
 
 export const useDarkMode = (): [Theme, ToggleTheme, boolean] => {
-	const [theme, setTheme] = useState('light');
+	const [theme, setTheme] = useState<Theme>('light');
 	const [componentMounted, setComponentMounted] = useState(false);
 
-	const setMode = (mode: string) => {
+	const setMode = (mode: Theme) => {
 		window.localStorage.setItem('theme', mode);
 		setTheme(mode);
 	};
@@ -23,11 +23,13 @@ export const useDarkMode = (): [Theme, ToggleTheme, boolean] => {
 	useEffect(() => {
 		const localTheme = window.localStorage.getItem('theme');
 
-		window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches && !localTheme
-			? setMode('dark')
-			: localTheme
-			? setTheme(localTheme)
-			: setMode('light');
+		if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches && !localTheme) {
+			setMode('dark');
+		} else if (localTheme) {
+			setTheme(localTheme as Theme);
+		} else {
+			setMode('light');
+		}
 
 		setComponentMounted(true);
 	}, []);

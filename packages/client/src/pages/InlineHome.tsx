@@ -5,13 +5,11 @@ import { InlineHomeData } from '../_data/InlineHome';
 
 import './InlineHome.css';
 
-// interface InlineHomeProps extends ToggleThemeProps {}
-
-const { titleBar, about, work } = InlineHomeData;
+const { titleBar, about, work, project, education, weekends } = InlineHomeData;
 function InlineHome({ theme, toggleTheme }: ToggleThemeProps) {
 	return (
 		<>
-			<div className="m-3" style={{ minHeight: 'calc(100vh - 100px)' }}>
+			<div className="m-3" style={{ minHeight: 'calc(100vh - 70px)', maxWidth: '1920px' }}>
 				<div className="d-md-flex d-sm-block justify-content-between">
 					<div>
 						<h1>
@@ -31,35 +29,119 @@ function InlineHome({ theme, toggleTheme }: ToggleThemeProps) {
 					<Toggle theme={theme} toggleTheme={toggleTheme} />
 				</div>
 				<hr />
-				{about.map((line) => (
-					<p key={line} dangerouslySetInnerHTML={{ __html: line }} />
-				))}
+				<div className="my-2">
+					{about.map((line) => (
+						<p key={line} dangerouslySetInnerHTML={{ __html: line }} />
+					))}
+				</div>
 				<hr />
 				<h3>Work Experience</h3>
-				{work.map(({ company, title, period, description, technologies }) => (
-					<div className="mt-3 mb-4" key={title}>
-						<h5>
-							<b>{company}</b>&nbsp;&nbsp;-&nbsp;&nbsp;{title}
-						</h5>
-						<h5>{period}</h5>
-						<p>{description}</p>
-						<span>
-							Technologies Used:{' '}
-							{technologies.map(({ title, icon }) => (
+				<ul>
+					{work.map(({ company, title, period, description, technologies }) => (
+						<li key={company} className="mt-3 mb-4">
+							<h5>
+								<b>{company}</b>&nbsp;&nbsp;-&nbsp;&nbsp;{title}
+							</h5>
+							<h5>{period}</h5>
+							<p>{description}</p>
+							<span>
+								Technologies Used:{' '}
+								{technologies.map(({ title, icon }) => (
+									<img
+										key={title}
+										className={'tech-icon mx-1 ' + (theme === 'light' && 'grayscale')}
+										src={require('../assets/icons/' + icon)}
+										title={title}
+										alt={title}
+									/>
+								))}
+							</span>
+						</li>
+					))}
+				</ul>
+				<hr />
+				<h3>Projects</h3>
+				<ul>
+					{project.map(({ title, description, tags, languages, github, stars }) => (
+						<li key={title} className="mt3 mb-4">
+							<h5>
+								<b>{title}</b>
+							</h5>
+							{tags.map((tag) => (
+								<span
+									className={`badge rounded-pill mx-1 ${
+										theme === 'dark' ? 'bg-primary text-dark' : 'bg-dark text-light'
+									}`}
+									key={tag}>
+									{tag}
+								</span>
+							))}
+							<p className="my-2">{description}</p>
+							{languages.map(({ title, logo }) => (
 								<img
-									key={title}
-									className="tech-icon mx-1"
-									src={require('../assets/icons/' + icon)}
-									title={title}
+									className={`tech-icon ${theme === 'light' && 'grayscale'}`}
+									src={require('../assets/icons/' + logo)}
 									alt={title}
+									title={title}
+									key={title}
 								/>
 							))}
-						</span>
+							<span>&nbsp;&nbsp;&nbsp;|&nbsp;</span>
+							<a href={github} title="Github Repository">
+								<img
+									className="tech-icon mx-2"
+									alt="Github"
+									src={
+										theme === 'dark'
+											? require('../assets/icons/github-white.png')
+											: require('../assets/icons/github-black.png')
+									}
+								/>
+							</a>
+							<span>&nbsp;|&nbsp;</span>
+							<img
+								className="star-icon ml-2 mr-1"
+								alt="Github Stars"
+								src={
+									theme === 'dark'
+										? require('../assets/icons/star-white.png')
+										: require('../assets/icons/star-black.png')
+								}
+							/>
+							<span>
+								<b>{stars}</b>
+							</span>
+						</li>
+					))}
+				</ul>
+				<hr />
+				<h3>Education</h3>
+				<p className="text-muted">An extensive list of courses I have taken during my university education.</p>
+				{education.map(({ category, courses }) => (
+					<div key={category}>
+						<h6>
+							<b>{category}</b>
+						</h6>
+						<ul>
+							{courses.map(({ code, title }) => (
+								<li key={code}>
+									<span>
+										<b>{code}</b>: {title}
+									</span>
+								</li>
+							))}
+						</ul>
 					</div>
+				))}
+				<hr />
+				<h3>Weekends</h3>
+				{weekends.map((w) => (
+					<p key={1}>{w}</p>
 				))}
 			</div>
 			<div style={{ minHeight: '70px' }} className="m-3">
-				<span>
+				<hr />
+				<span className="text-muted">
 					The old site has been deprecated. Visit it <Link to="/depr">here.</Link>
 				</span>
 			</div>
