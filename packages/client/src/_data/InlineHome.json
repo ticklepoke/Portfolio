@@ -1,9 +1,6 @@
 {
   "titleBar": {
-    "name": {
-      "en": "Nigel Lee",
-      "cn": "李鼎闻"
-    },
+    "name": { "en": "Nigel Lee", "cn": "李鼎闻" },
     "links": [
       {
         "title": "Email",
@@ -35,26 +32,11 @@
       "period": "Summer 2021",
       "description": "Ipsum occaecat dolor exercitation reprehenderit eiusmod cillum anim excepteur veniam nulla et esse pariatur. Labore excepteur eiusmod eu aliqua minim aliquip occaecat voluptate. Fugiat et cupidatat aliqua dolor magna fugiat voluptate et adipisicing commodo. Ullamco sint veniam reprehenderit incididunt.Pariatur ullamco sint ex magna commodo aliquip ut minim culpa officia commodo. Deserunt ea in officia eiusmod ex. Nostrud cillum eiusmod voluptate exercitation nostrud incididunt sit voluptate sit incididunt pariatur Lorem qui anim.Pariatur cupidatat culpa et ea proident consequat quis dolore anim ipsum cupidatat nisi. Culpa tempor consectetur deserunt ipsum. Cillum proident cupidatat dolore ullamco nulla adipisicing proident occaecat. Culpa eu tempor irure enim.",
       "technologies": [
-        {
-          "title": "React Native",
-          "icon": "react.png"
-        },
-        {
-          "title": "Node.JS",
-          "icon": "node.png"
-        },
-        {
-          "title": "gRPC",
-          "icon": "grpc.png"
-        },
-        {
-          "title": "Kong",
-          "icon": "kong.png"
-        },
-        {
-          "title": "Docker",
-          "icon": "docker.png"
-        }
+        { "title": "React Native", "icon": "react.png" },
+        { "title": "Node.JS", "icon": "node.png" },
+        { "title": "gRPC", "icon": "grpc.png" },
+        { "title": "Kong", "icon": "kong.png" },
+        { "title": "Docker", "icon": "docker.png" }
       ]
     },
     {
@@ -63,14 +45,8 @@
       "period": "Winter 2020",
       "description": "Ipsum occaecat dolor exercitation reprehenderit eiusmod cillum anim excepteur veniam nulla et esse pariatur. Labore excepteur eiusmod eu aliqua minim aliquip occaecat voluptate. Fugiat et cupidatat aliqua dolor magna fugiat voluptate et adipisicing commodo. Ullamco sint veniam reprehenderit incididunt.Pariatur ullamco sint ex magna commodo aliquip ut minim culpa officia commodo. Deserunt ea in officia eiusmod ex. Nostrud cillum eiusmod voluptate exercitation nostrud incididunt sit voluptate sit incididunt pariatur Lorem qui anim.Pariatur cupidatat culpa et ea proident consequat quis dolore anim ipsum cupidatat nisi. Culpa tempor consectetur deserunt ipsum. Cillum proident cupidatat dolore ullamco nulla adipisicing proident occaecat. Culpa eu tempor irure enim.",
       "technologies": [
-        {
-          "title": "React",
-          "icon": "react.png"
-        },
-        {
-          "title": "Docker",
-          "icon": "docker.png"
-        }
+        { "title": "React", "icon": "react.png" },
+        { "title": "Docker", "icon": "docker.png" }
       ]
     },
     {
@@ -79,26 +55,11 @@
       "period": "2H 2020",
       "description": "Ipsum occaecat dolor exercitation reprehenderit eiusmod cillum anim excepteur veniam nulla et esse pariatur. Labore excepteur eiusmod eu aliqua minim aliquip occaecat voluptate. Fugiat et cupidatat aliqua dolor magna fugiat voluptate et adipisicing commodo. Ullamco sint veniam reprehenderit incididunt.Pariatur ullamco sint ex magna commodo aliquip ut minim culpa officia commodo. Deserunt ea in officia eiusmod ex. Nostrud cillum eiusmod voluptate exercitation nostrud incididunt sit voluptate sit incididunt pariatur Lorem qui anim.Pariatur cupidatat culpa et ea proident consequat quis dolore anim ipsum cupidatat nisi. Culpa tempor consectetur deserunt ipsum. Cillum proident cupidatat dolore ullamco nulla adipisicing proident occaecat. Culpa eu tempor irure enim.",
       "technologies": [
-        {
-          "title": "Angular",
-          "icon": "angular.png"
-        },
-        {
-          "title": "Node.JS",
-          "icon": "node.png"
-        },
-        {
-          "title": "Docker",
-          "icon": "docker.png"
-        },
-        {
-          "title": "Google Cloud Platform",
-          "icon": "googlecloud.png"
-        },
-        {
-          "title": "TypeORM",
-          "icon": "typeorm.png"
-        }
+        { "title": "Angular", "icon": "angular.png" },
+        { "title": "Node.JS", "icon": "node.png" },
+        { "title": "Docker", "icon": "docker.png" },
+        { "title": "Google Cloud Platform", "icon": "googlecloud.png" },
+        { "title": "TypeORM", "icon": "typeorm.png" }
       ]
     },
     {
@@ -107,14 +68,8 @@
       "period": "Summer 2019",
       "description": "Ipsum occaecat dolor exercitation reprehenderit eiusmod cillum anim excepteur veniam nulla et esse pariatur. Labore excepteur eiusmod eu aliqua minim aliquip occaecat voluptate. Fugiat et cupidatat aliqua dolor magna fugiat voluptate et adipisicing commodo. Ullamco sint veniam reprehenderit incididunt.Pariatur ullamco sint ex magna commodo aliquip ut minim culpa officia commodo. Deserunt ea in officia eiusmod ex. Nostrud cillum eiusmod voluptate exercitation nostrud incididunt sit voluptate sit incididunt pariatur Lorem qui anim.Pariatur cupidatat culpa et ea proident consequat quis dolore anim ipsum cupidatat nisi. Culpa tempor consectetur deserunt ipsum. Cillum proident cupidatat dolore ullamco nulla adipisicing proident occaecat. Culpa eu tempor irure enim.",
       "technologies": [
-        {
-          "title": "React",
-          "icon": "react.png"
-        },
-        {
-          "title": "Docker",
-          "icon": "docker.png"
-        }
+        { "title": "React", "icon": "react.png" },
+        { "title": "Docker", "icon": "docker.png" }
       ]
     }
   ],
@@ -122,60 +77,27 @@
     {
       "title": "Metacircular-JS",
       "description": "Ipsum occaecat dolor exercitation reprehenderit eiusmod cillum anim excepteur veniam nulla et esse pariatur. Labore excepteur eiusmod eu aliqua minim aliquip occaecat voluptate. Fugiat et cupidatat aliqua dolor magna fugiat voluptate et adipisicing commodo. Ullamco sint veniam reprehenderit incididunt.Pariatur ullamco sint ex magna commodo aliquip ut minim culpa officia commodo. Deserunt ea in officia eiusmod ex. Nostrud cillum eiusmod voluptate exercitation nostrud incididunt sit voluptate sit incididunt pariatur Lorem qui anim.Pariatur cupidatat culpa et ea proident consequat quis dolore anim ipsum cupidatat nisi. Culpa tempor consectetur deserunt ipsum. Cillum proident cupidatat dolore ullamco nulla adipisicing proident occaecat. Culpa eu tempor irure enim.",
-      "tags": [
-        "Compilers",
-        "Evaluators"
-      ],
+      "tags": ["Compilers", "Evaluators"],
       "languages": [
-        {
-          "title": "JavaScript",
-          "logo": "javascript.png"
-        },
-        {
-          "title": "TypeScript",
-          "logo": "typescript.png"
-        }
+        { "title": "JavaScript", "logo": "javascript.png" },
+        { "title": "TypeScript", "logo": "typescript.png" }
       ],
       "slug": "metacircular-js",
       "github": "https://github.com/ticklepoke/metacircular-js",
-      "stars": 10
+      "stars": 1
     },
     {
       "title": "Nand2Rust",
       "description": "Ipsum occaecat dolor exercitation reprehenderit eiusmod cillum anim excepteur veniam nulla et esse pariatur. Labore excepteur eiusmod eu aliqua minim aliquip occaecat voluptate. Fugiat et cupidatat aliqua dolor magna fugiat voluptate et adipisicing commodo. Ullamco sint veniam reprehenderit incididunt.Pariatur ullamco sint ex magna commodo aliquip ut minim culpa officia commodo. Deserunt ea in officia eiusmod ex. Nostrud cillum eiusmod voluptate exercitation nostrud incididunt sit voluptate sit incididunt pariatur Lorem qui anim.Pariatur cupidatat culpa et ea proident consequat quis dolore anim ipsum cupidatat nisi. Culpa tempor consectetur deserunt ipsum. Cillum proident cupidatat dolore ullamco nulla adipisicing proident occaecat. Culpa eu tempor irure enim.",
-      "tags": [
-        "Compilers",
-        "Virtual Machines"
-      ],
+      "tags": ["Compilers", "Virtual Machines"],
       "languages": [
-        {
-          "title": "Hack",
-          "logo": "hack.png"
-        },
-        {
-          "title": "Assembly",
-          "logo": "assembly.png"
-        },
-        {
-          "title": "Scilab",
-          "logo": "scilab.png"
-        },
-        {
-          "title": "HTML",
-          "logo": "html.png"
-        },
-        {
-          "title": "Rust",
-          "logo": "rust.png"
-        },
-        {
-          "title": "Shell",
-          "logo": "shell.png"
-        },
-        {
-          "title": "Batchfile",
-          "logo": "batchfile.png"
-        }
+        { "title": "Hack", "logo": "hack.png" },
+        { "title": "Assembly", "logo": "assembly.png" },
+        { "title": "Scilab", "logo": "scilab.png" },
+        { "title": "HTML", "logo": "html.png" },
+        { "title": "Rust", "logo": "rust.png" },
+        { "title": "Shell", "logo": "shell.png" },
+        { "title": "Batchfile", "logo": "batchfile.png" }
       ],
       "slug": "nand2rust",
       "github": "https://github.com/ticklepoke/nand2rust",
@@ -184,18 +106,10 @@
     {
       "title": "Finance-Math",
       "description": "Ipsum occaecat dolor exercitation reprehenderit eiusmod cillum anim excepteur veniam nulla et esse pariatur. Labore excepteur eiusmod eu aliqua minim aliquip occaecat voluptate. Fugiat et cupidatat aliqua dolor magna fugiat voluptate et adipisicing commodo. Ullamco sint veniam reprehenderit incididunt.Pariatur ullamco sint ex magna commodo aliquip ut minim culpa officia commodo. Deserunt ea in officia eiusmod ex. Nostrud cillum eiusmod voluptate exercitation nostrud incididunt sit voluptate sit incididunt pariatur Lorem qui anim.Pariatur cupidatat culpa et ea proident consequat quis dolore anim ipsum cupidatat nisi. Culpa tempor consectetur deserunt ipsum. Cillum proident cupidatat dolore ullamco nulla adipisicing proident occaecat. Culpa eu tempor irure enim.",
-      "tags": [
-        "Finance"
-      ],
+      "tags": ["Finance"],
       "languages": [
-        {
-          "title": "TypeScript",
-          "logo": "typescript.png"
-        },
-        {
-          "title": "JavaScript",
-          "logo": "javascript.png"
-        }
+        { "title": "TypeScript", "logo": "typescript.png" },
+        { "title": "JavaScript", "logo": "javascript.png" }
       ],
       "slug": "finance-math",
       "github": "https://github.com/ticklepoke/finance-math",
@@ -204,16 +118,8 @@
     {
       "title": "NeoVim",
       "description": "Ipsum occaecat dolor exercitation reprehenderit eiusmod cillum anim excepteur veniam nulla et esse pariatur. Labore excepteur eiusmod eu aliqua minim aliquip occaecat voluptate. Fugiat et cupidatat aliqua dolor magna fugiat voluptate et adipisicing commodo. Ullamco sint veniam reprehenderit incididunt.Pariatur ullamco sint ex magna commodo aliquip ut minim culpa officia commodo. Deserunt ea in officia eiusmod ex. Nostrud cillum eiusmod voluptate exercitation nostrud incididunt sit voluptate sit incididunt pariatur Lorem qui anim.Pariatur cupidatat culpa et ea proident consequat quis dolore anim ipsum cupidatat nisi. Culpa tempor consectetur deserunt ipsum. Cillum proident cupidatat dolore ullamco nulla adipisicing proident occaecat. Culpa eu tempor irure enim.",
-      "tags": [
-        "NeoVim",
-        "Vim"
-      ],
-      "languages": [
-        {
-          "title": "Vim script",
-          "logo": "vimscript.png"
-        }
-      ],
+      "tags": ["NeoVim", "Vim"],
+      "languages": [{ "title": "Vim script", "logo": "vimscript.png" }],
       "slug": "nvim",
       "github": "https://github.com/ticklepoke/nvim",
       "stars": 1
@@ -222,31 +128,12 @@
   "education": [
     {
       "category": "Computer Science (NTU)",
-      "courses": [
-        {
-          "code": "CS1234",
-          "title": "Introduction"
-        }
-      ]
+      "courses": [{ "code": "CS1234", "title": "Introduction" }]
     },
-    {
-      "category": "Computer Science (NUS)",
-      "courses": []
-    },
-    {
-      "category": "General Engineering (NTU)",
-      "courses": []
-    },
-    {
-      "category": "Mathematics (NTU)",
-      "courses": []
-    },
-    {
-      "category": "Business / Technology Management (NTU)",
-      "courses": []
-    }
+    { "category": "Computer Science (NUS)", "courses": [] },
+    { "category": "General Engineering (NTU)", "courses": [] },
+    { "category": "Mathematics (NTU)", "courses": [] },
+    { "category": "Business / Technology Management (NTU)", "courses": [] }
   ],
-  "weekends": [
-    "My weekends are spent on either windsurfing or weightlifting."
-  ]
+  "weekends": ["My weekends are spent on either windsurfing or weightlifting."]
 }
