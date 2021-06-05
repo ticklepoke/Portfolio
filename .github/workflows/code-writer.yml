@@ -1,0 +1,33 @@
+name: Code Writer
+
+on:
+  # workflow_dispatch:
+  #   inputs:
+  #     logLevel:
+  #       description: "Log level"
+  #       required: true
+  #       default: "warning"
+  #     tags:
+  #       description: "Test scenario tags"
+  schedule:
+    - cron: "*/5 * * * *"
+  # - cron: "0 0 * * 1"
+
+jobs:
+  schedule:
+    name: Check Repos
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Fetch repos
+        run: cd ./packages/codewriter && yarn install && yarn fetch-repo
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+
+      - name: Make PR
+        uses: peter-evans/create-pull-request@v3
+        with:
+          branch: automated/repo
+          delete-branch: true
+          title: automated/repo

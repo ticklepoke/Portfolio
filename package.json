@@ -14,7 +14,8 @@
     "new-version": "lerna version --conventional-commits",
     "diff": "lerna diff",
     "install": "lerna bootstrap",
-    "start": "lerna run start --scope=@portfolio/client"
+    "start": "lerna run start --scope=@portfolio/client",
+    "fetch-repo": "lerna run fetch-repo --scope=codewriter"
   },
   "config": {
     "commitizen": {
