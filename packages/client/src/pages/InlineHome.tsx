@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import HelmetWrapper from '../common/HelmetWrapper';
 import Toggle, { ToggleThemeProps } from '../components/ToggleTheme';
 import * as inlineHomeData from '../_data/InlineHome.json';
 
@@ -47,6 +48,10 @@ const { titleBar, about, work, project, education, weekends } = (inlineHomeData 
 function InlineHome({ theme, toggleTheme }: ToggleThemeProps) {
 	return (
 		<>
+			<HelmetWrapper
+				title="Home | Nigel Lee"
+				description="Computer Science student from Singapore, actively looking for software internships. Renaissance Engineering Program Student."
+			/>
 			<div className="m-3" style={{ minHeight: 'calc(100vh - 70px)', maxWidth: '1920px' }}>
 				<div className="d-md-flex d-sm-block justify-content-between">
 					<div>
