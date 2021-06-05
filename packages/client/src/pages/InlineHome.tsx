@@ -6,6 +6,8 @@ import * as inlineHomeData from '../_data/InlineHome.json';
 
 import './InlineHome.css';
 
+const EXCLUDED_FILE_TYPE = ['Batchfile'];
+
 interface InlineHomeData {
 	titleBar: {
 		name: {
@@ -40,7 +42,8 @@ interface InlineHomeData {
 	weekends: string[];
 }
 
-const { titleBar, about, work, project, education, weekends } = (inlineHomeData as unknown) as InlineHomeData;
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const { titleBar, about, work, project, education, weekends } = (inlineHomeData as any).default as InlineHomeData;
 
 function InlineHome({ theme, toggleTheme }: ToggleThemeProps) {
 	return (
@@ -117,15 +120,17 @@ function InlineHome({ theme, toggleTheme }: ToggleThemeProps) {
 								</span>
 							))}
 							<p className="my-2">{description}</p>
-							{languages.map(({ title, logo }) => (
-								<img
-									className={`tech-icon ${theme === 'light' && 'grayscale'}`}
-									src={require('../assets/icons/' + logo)}
-									alt={title}
-									title={title}
-									key={title}
-								/>
-							))}
+							{languages
+								.filter((lang) => !EXCLUDED_FILE_TYPE.includes(lang.title))
+								.map(({ title, logo }) => (
+									<img
+										className={`tech-icon mx-1 ${theme === 'light' && 'grayscale'}`}
+										src={require('../assets/icons/' + logo)}
+										alt={title}
+										title={title}
+										key={title}
+									/>
+								))}
 							<span>&nbsp;&nbsp;&nbsp;|&nbsp;</span>
 							<a href={github} title="Github Repository">
 								<img

@@ -33,7 +33,13 @@
 		"linebreak-style": ["error", "unix"],
 		"quotes": ["error", "single", { "avoidEscape": true }],
 		"semi": ["error", "always"],
-		"prettier/prettier": "error",
+		"prettier/prettier": [
+			"error",
+			{
+				"endOfLine": "auto",
+				"tabWidth": 2
+			}
+		],
 		"no-nested-ternary": ["error"],
 		"@typescript-eslint/explicit-module-boundary-types": "off",
 		"react/prop-types": "off"
