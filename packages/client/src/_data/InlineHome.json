@@ -33,7 +33,11 @@
       "company": "Stashaway",
       "title": "Software Engineering Intern",
       "period": "Summer 2021",
-      "description": "Ipsum occaecat dolor exercitation reprehenderit eiusmod cillum anim excepteur veniam nulla et esse pariatur. Labore excepteur eiusmod eu aliqua minim aliquip occaecat voluptate. Fugiat et cupidatat aliqua dolor magna fugiat voluptate et adipisicing commodo. Ullamco sint veniam reprehenderit incididunt.Pariatur ullamco sint ex magna commodo aliquip ut minim culpa officia commodo. Deserunt ea in officia eiusmod ex. Nostrud cillum eiusmod voluptate exercitation nostrud incididunt sit voluptate sit incididunt pariatur Lorem qui anim.Pariatur cupidatat culpa et ea proident consequat quis dolore anim ipsum cupidatat nisi. Culpa tempor consectetur deserunt ipsum. Cillum proident cupidatat dolore ullamco nulla adipisicing proident occaecat. Culpa eu tempor irure enim.",
+      "description": [
+        "Having deployed finance-math as a personal project, I was offered an internship with the company's plan squad. The squad's objective was to build a financial planner with a focus on events specific to Singapore, such as CPF payouts. The planner was required to accurately project a user's net worth by compounding his / her assets and liabilities while factoring in nominal interest rates.",
+        "We implemented the project on a JavaScript stack and abstracted the core projection logic and entities into an NPM module. This allowed the logic to be reused in both client and server environments.",
+        "I also initiated an internship project which involved implementing gRPC APIs in an existing Express server. The end goal was to provide concurrent support for both REST and gRPC APIs, with minimal disruption to the controller-service architecture. I also took on the responsibility of writing proto files and generating TypeScript stubs."
+      ],
       "technologies": [
         {
           "title": "React Native",
@@ -61,7 +65,11 @@
       "company": "Motional",
       "title": "Front-End Software Engineering Intern",
       "period": "Winter 2020",
-      "description": "Ipsum occaecat dolor exercitation reprehenderit eiusmod cillum anim excepteur veniam nulla et esse pariatur. Labore excepteur eiusmod eu aliqua minim aliquip occaecat voluptate. Fugiat et cupidatat aliqua dolor magna fugiat voluptate et adipisicing commodo. Ullamco sint veniam reprehenderit incididunt.Pariatur ullamco sint ex magna commodo aliquip ut minim culpa officia commodo. Deserunt ea in officia eiusmod ex. Nostrud cillum eiusmod voluptate exercitation nostrud incididunt sit voluptate sit incididunt pariatur Lorem qui anim.Pariatur cupidatat culpa et ea proident consequat quis dolore anim ipsum cupidatat nisi. Culpa tempor consectetur deserunt ipsum. Cillum proident cupidatat dolore ullamco nulla adipisicing proident occaecat. Culpa eu tempor irure enim.",
+      "description": [
+        "As an intern with Map-Creator team, I was tasked with developing and refining features of a front-end map annotation platform. The two most challenging tasks I faced were validating the connectedness of geometric objects formed by nodes and validating complex mouse interaction logic such as calculating the orientation and displacement of a mouse drag. ",
+        "To tackle the first problem, I implemented a modified breadth-first search algorithm by replacing a queue data structure with a single neighbour. This modification allowed me to validate if the nodes formed a single, cyclic path.",
+        "To tackle the second problem, I abstracted DOM interactions into a reactive stream of events using RxJS. This allowed me to compose operators from its extensive library to achieve the desired validation logic on the stream of DOM events."
+      ],
       "technologies": [
         {
           "title": "React",
@@ -77,7 +85,12 @@
       "company": "Resync Technologies",
       "title": "Software Engineering Intern",
       "period": "2H 2020",
-      "description": "Ipsum occaecat dolor exercitation reprehenderit eiusmod cillum anim excepteur veniam nulla et esse pariatur. Labore excepteur eiusmod eu aliqua minim aliquip occaecat voluptate. Fugiat et cupidatat aliqua dolor magna fugiat voluptate et adipisicing commodo. Ullamco sint veniam reprehenderit incididunt.Pariatur ullamco sint ex magna commodo aliquip ut minim culpa officia commodo. Deserunt ea in officia eiusmod ex. Nostrud cillum eiusmod voluptate exercitation nostrud incididunt sit voluptate sit incididunt pariatur Lorem qui anim.Pariatur cupidatat culpa et ea proident consequat quis dolore anim ipsum cupidatat nisi. Culpa tempor consectetur deserunt ipsum. Cillum proident cupidatat dolore ullamco nulla adipisicing proident occaecat. Culpa eu tempor irure enim.",
+      "description": [
+        "As an apprentice in SG Innovate's Summation Program, I was attached to a startup as a technology intern. My work there involved developing and improving features on both an Angular frontend and an Express backend. Majority of my initiatives centered around improving developer experience.",
+        "In order to efficiently control features that were visible in production, I implemented a feature flag system. This system comprised of a service that held the core logic for showing or hiding features, which could be consumed by Angular directives or route guards. This allowed for a finer grain of control of the features in production.",
+        "As the codebase was relatively young, I initiated unit tests in order to uphold Test Driven Development principles. This was where I familiarised myself with techniques such as spies and mocks.",
+        "I also initiated an internship project involving implementing an Object Relation Mapping layer within the Express server, preventing the need for raw database queries. By utilising TypeORM, I was able to generate well-typed model files based on PostgreSQL schemas. This significantly reduced development time."
+      ],
       "technologies": [
         {
           "title": "Angular",
@@ -105,7 +118,7 @@
       "company": "DBS Bank",
       "title": "Innovation Intern",
       "period": "Summer 2019",
-      "description": "Ipsum occaecat dolor exercitation reprehenderit eiusmod cillum anim excepteur veniam nulla et esse pariatur. Labore excepteur eiusmod eu aliqua minim aliquip occaecat voluptate. Fugiat et cupidatat aliqua dolor magna fugiat voluptate et adipisicing commodo. Ullamco sint veniam reprehenderit incididunt.Pariatur ullamco sint ex magna commodo aliquip ut minim culpa officia commodo. Deserunt ea in officia eiusmod ex. Nostrud cillum eiusmod voluptate exercitation nostrud incididunt sit voluptate sit incididunt pariatur Lorem qui anim.Pariatur cupidatat culpa et ea proident consequat quis dolore anim ipsum cupidatat nisi. Culpa tempor consectetur deserunt ipsum. Cillum proident cupidatat dolore ullamco nulla adipisicing proident occaecat. Culpa eu tempor irure enim.",
+      "description": [],
       "technologies": [
         {
           "title": "React",
