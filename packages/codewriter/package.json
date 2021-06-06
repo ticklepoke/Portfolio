@@ -22,7 +22,8 @@
   },
   "scripts": {
     "fetch-repo": "cross-env DEVELOPMENT=true ts-node lib/codeWriter.ts",
-    "prod:fetch-repo": "cross-env ts-node lib/codeWriter.ts"
+    "prod:fetch-repo": "cross-env ts-node lib/codeWriter.ts",
+    "jsonlint": "jsonlint -i ../client/src/_data/InlineHome.json"
   },
   "bugs": {
     "url": "https://github.com/ticklepoke/Portfolio/issues"
@@ -30,6 +31,7 @@
   "dependencies": {
     "cross-env": "^7.0.3",
     "dotenv": "^10.0.0",
+    "jsonlint": "^1.6.3",
     "prettier": "^2.3.0",
     "ts-node": "^10.0.0",
     "typescript": "^4.3.2"
