@@ -21,7 +21,7 @@ interface InlineHomeData {
 		company: string;
 		title: string;
 		period: string;
-		description: string;
+		description: string[];
 		technologies: { title: string; icon: string }[];
 	}[];
 	project: {
@@ -86,7 +86,9 @@ function InlineHome({ theme, toggleTheme }: ToggleThemeProps) {
 								<b>{company}</b>&nbsp;&nbsp;-&nbsp;&nbsp;{title}
 							</h5>
 							<h5>{period}</h5>
-							<p>{description}</p>
+							{description.map((d) => (
+								<p key={0}>{d}</p>
+							))}
 							<span>
 								Technologies Used:{' '}
 								{technologies.map(({ title, icon }) => (
