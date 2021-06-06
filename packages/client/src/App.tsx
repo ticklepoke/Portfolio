@@ -13,7 +13,7 @@ import Footer from './components/Footer';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 AOS.init({
-	duration: 800,
+	duration: 1200,
 });
 
 const HomeLazy = lazy(() => import('./pages/Home'));
