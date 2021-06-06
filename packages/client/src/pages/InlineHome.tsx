@@ -160,26 +160,26 @@ function InlineHome({ theme, toggleTheme }: ToggleThemeProps) {
 					))}
 				</ul>
 				<hr data-aos="fade" />
-				<h3 data-aos="fade">Education</h3>
-				<p data-aos="fade" className="text-muted">
-					An extensive list of courses I have taken during my university education.
-				</p>
-				{education.map(({ category, courses }) => (
-					<div data-aos="fade" key={category}>
-						<h6>
-							<b>{category}</b>
-						</h6>
-						<ul>
-							{courses.map(({ code, title }) => (
-								<li key={code}>
-									<span>
-										<b>{code}</b>: {title}
-									</span>
-								</li>
-							))}
-						</ul>
-					</div>
-				))}
+				<div data-aos="fade">
+					<h3>Education</h3>
+					<p className="text-muted">An extensive list of courses I have taken during my university education.</p>
+					{education.map(({ category, courses }) => (
+						<div key={category}>
+							<h6>
+								<b>{category}</b>
+							</h6>
+							<ul>
+								{courses.map(({ code, title }) => (
+									<li key={code}>
+										<span>
+											<b>{code}</b>: {title}
+										</span>
+									</li>
+								))}
+							</ul>
+						</div>
+					))}
+				</div>
 				<hr data-aos="fade" />
 				<h3 data-aos="fade">Weekends</h3>
 				<div data-aos="fade">
