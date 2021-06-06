@@ -121,7 +121,7 @@ function InlineHome({ theme, toggleTheme }: ToggleThemeProps) {
 									{tag}
 								</span>
 							))}
-							<p className="my-2">{description}</p>
+							<p className="my-2" dangerouslySetInnerHTML={{ __html: description }}></p>
 							{languages
 								.filter((lang) => !EXCLUDED_FILE_TYPE.includes(lang.title))
 								.map(({ title, logo }) => (
