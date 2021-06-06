@@ -118,7 +118,11 @@
       "company": "DBS Bank",
       "title": "Innovation Intern",
       "period": "Summer 2019",
-      "description": [],
+      "description": [
+        "I was an intern with the Bank's UNI.corn+ internship program. I was placed in a group of fellow interns and tasked to design a web-based solution to encourage banking clients to plan for their retirement.",
+        "My team engaged in several iterations of rapid prototyping and eventually embarked on an ambitious plan to create a financial planner that could comprehensively account for most major financial events in a client's life. ",
+        "My team implemented the idea in a React and NodeJS based prototype."
+      ],
       "technologies": [
         {
           "title": "React",
@@ -134,7 +138,7 @@
   "project": [
     {
       "title": "Metacircular-JS",
-      "description": "Ipsum occaecat dolor exercitation reprehenderit eiusmod cillum anim excepteur veniam nulla et esse pariatur. Labore excepteur eiusmod eu aliqua minim aliquip occaecat voluptate. Fugiat et cupidatat aliqua dolor magna fugiat voluptate et adipisicing commodo. Ullamco sint veniam reprehenderit incididunt.Pariatur ullamco sint ex magna commodo aliquip ut minim culpa officia commodo. Deserunt ea in officia eiusmod ex. Nostrud cillum eiusmod voluptate exercitation nostrud incididunt sit voluptate sit incididunt pariatur Lorem qui anim.Pariatur cupidatat culpa et ea proident consequat quis dolore anim ipsum cupidatat nisi. Culpa tempor consectetur deserunt ipsum. Cillum proident cupidatat dolore ullamco nulla adipisicing proident occaecat. Culpa eu tempor irure enim.",
+      "description": "Metacircular-JS is a TypeScript implementation of the metacircular evaluator described in the SICP textbook. My inspiration to build this came from the CS4215 Programming Language Implementation course I took in NUS, which pays homage to the original MIT course. The metacircular evaluator consists of two mutually recursive functions: <code>evaluate()</code> and <code>apply()</code>. <code>evaluate()</code> recursively parses an AST to identify the semantic components of the code, while <code>apply()</code> utilises the host language to invoke features of the interpreted language. The supported language grammar is represented in Backus-Naur form in the documentation.",
       "tags": [
         "Compilers",
         "Evaluators"
@@ -155,7 +159,7 @@
     },
     {
       "title": "Nand2Rust",
-      "description": "Ipsum occaecat dolor exercitation reprehenderit eiusmod cillum anim excepteur veniam nulla et esse pariatur. Labore excepteur eiusmod eu aliqua minim aliquip occaecat voluptate. Fugiat et cupidatat aliqua dolor magna fugiat voluptate et adipisicing commodo. Ullamco sint veniam reprehenderit incididunt.Pariatur ullamco sint ex magna commodo aliquip ut minim culpa officia commodo. Deserunt ea in officia eiusmod ex. Nostrud cillum eiusmod voluptate exercitation nostrud incididunt sit voluptate sit incididunt pariatur Lorem qui anim.Pariatur cupidatat culpa et ea proident consequat quis dolore anim ipsum cupidatat nisi. Culpa tempor consectetur deserunt ipsum. Cillum proident cupidatat dolore ullamco nulla adipisicing proident occaecat. Culpa eu tempor irure enim.",
+      "description": "Nand2Rust is a Rust based implementation of the projects found in The Elements of Computing Systems textbook, or more commonly known as Nand2Tetris. The Rust implementation spans 4 different modules of a compiler: the frontend which is responsible for lexical and syntax analysis, the backend (WIP) which is responsible optimisation and code generation, the VM-translator which translates VM code to assembly, and the assembler, which translates assembly to binary code.",
       "tags": [
         "Compilers",
         "Virtual Machines"
@@ -196,7 +200,7 @@
     },
     {
       "title": "Finance-Math",
-      "description": "Ipsum occaecat dolor exercitation reprehenderit eiusmod cillum anim excepteur veniam nulla et esse pariatur. Labore excepteur eiusmod eu aliqua minim aliquip occaecat voluptate. Fugiat et cupidatat aliqua dolor magna fugiat voluptate et adipisicing commodo. Ullamco sint veniam reprehenderit incididunt.Pariatur ullamco sint ex magna commodo aliquip ut minim culpa officia commodo. Deserunt ea in officia eiusmod ex. Nostrud cillum eiusmod voluptate exercitation nostrud incididunt sit voluptate sit incididunt pariatur Lorem qui anim.Pariatur cupidatat culpa et ea proident consequat quis dolore anim ipsum cupidatat nisi. Culpa tempor consectetur deserunt ipsum. Cillum proident cupidatat dolore ullamco nulla adipisicing proident occaecat. Culpa eu tempor irure enim.",
+      "description": "Finance-Math is an NPM library which I publish to provide utility functions such as PV, FV, PMT, IRR for financial calculations. I used this project to explore the various tools in the JavaScript ecosystem. This project was inspired by my internship with DBS Bank and the RE8013 Financial Management course I took in NTU.",
       "tags": [
         "Finance"
       ],
@@ -216,7 +220,7 @@
     },
     {
       "title": "NeoVim",
-      "description": "Ipsum occaecat dolor exercitation reprehenderit eiusmod cillum anim excepteur veniam nulla et esse pariatur. Labore excepteur eiusmod eu aliqua minim aliquip occaecat voluptate. Fugiat et cupidatat aliqua dolor magna fugiat voluptate et adipisicing commodo. Ullamco sint veniam reprehenderit incididunt.Pariatur ullamco sint ex magna commodo aliquip ut minim culpa officia commodo. Deserunt ea in officia eiusmod ex. Nostrud cillum eiusmod voluptate exercitation nostrud incididunt sit voluptate sit incididunt pariatur Lorem qui anim.Pariatur cupidatat culpa et ea proident consequat quis dolore anim ipsum cupidatat nisi. Culpa tempor consectetur deserunt ipsum. Cillum proident cupidatat dolore ullamco nulla adipisicing proident occaecat. Culpa eu tempor irure enim.",
+      "description": "This repository contains my current NeoVim configuration that I use both in the terminal and with VSCode. My goal is to recreate in Neovim commonly used features found in text editors. This configuration currently includes ripgrep text searches, fuzzy file searches, git integration and code suggestion. ",
       "tags": [
         "NeoVim",
         "Vim"
