@@ -1,18 +1,17 @@
-name: Code Writer
+# name: Code Writer
 
 on:
-  # workflow_dispatch:
-  #   inputs:
-  #     logLevel:
-  #       description: "Log level"
-  #       required: true
-  #       default: "warning"
-  #     tags:
-  #       description: "Test scenario tags"
+  workflow_dispatch:
+    inputs:
+      logLevel:
+        description: "Log level"
+        required: true
+        default: "warning"
+      tags:
+        description: "Test scenario tags"
   schedule:
-    - cron: "*/5 * * * *"
+    - cron: "0 0 * * *"
   # - cron: "0 0 * * 1"
-
 
 jobs:
   schedule:

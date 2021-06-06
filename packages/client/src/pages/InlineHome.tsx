@@ -53,7 +53,7 @@ function InlineHome({ theme, toggleTheme }: ToggleThemeProps) {
 				description="Computer Science student from Singapore, actively looking for software internships. Renaissance Engineering Program Student."
 			/>
 			<div className="m-3" style={{ minHeight: 'calc(100vh - 70px)', maxWidth: '1920px' }}>
-				<div className="d-md-flex d-sm-block justify-content-between">
+				<div data-aos="fade" className="d-md-flex d-sm-block justify-content-between">
 					<div>
 						<h1>
 							{titleBar.name.en}
@@ -71,17 +71,17 @@ function InlineHome({ theme, toggleTheme }: ToggleThemeProps) {
 					</div>
 					<Toggle theme={theme} toggleTheme={toggleTheme} />
 				</div>
-				<hr />
-				<div className="my-2">
+				<hr data-aos="fade" />
+				<div data-aos="fade" className="my-2">
 					{about.map((line) => (
 						<p key={line} dangerouslySetInnerHTML={{ __html: line }} />
 					))}
 				</div>
-				<hr />
-				<h3>Work Experience</h3>
+				<hr data-aos="fade" />
+				<h3 data-aos="fade">Work Experience</h3>
 				<ul>
 					{work.map(({ company, title, period, description, technologies }) => (
-						<li key={company} className="mt-3 mb-4">
+						<li data-aos="fade" key={company} className="mt-3 mb-4">
 							<h5>
 								<b>{company}</b>&nbsp;&nbsp;-&nbsp;&nbsp;{title}
 							</h5>
@@ -102,11 +102,11 @@ function InlineHome({ theme, toggleTheme }: ToggleThemeProps) {
 						</li>
 					))}
 				</ul>
-				<hr />
-				<h3>Projects</h3>
+				<hr data-aos="fade" />
+				<h3 data-aos="fade">Projects</h3>
 				<ul>
 					{project.map(({ title, description, tags, languages, github, stars }) => (
-						<li key={title} className="mt3 mb-4">
+						<li data-aos="fade" key={title} className="mt3 mb-4">
 							<h5>
 								<b>{title}</b>
 							</h5>
@@ -159,11 +159,13 @@ function InlineHome({ theme, toggleTheme }: ToggleThemeProps) {
 						</li>
 					))}
 				</ul>
-				<hr />
-				<h3>Education</h3>
-				<p className="text-muted">An extensive list of courses I have taken during my university education.</p>
+				<hr data-aos="fade" />
+				<h3 data-aos="fade">Education</h3>
+				<p data-aos="fade" className="text-muted">
+					An extensive list of courses I have taken during my university education.
+				</p>
 				{education.map(({ category, courses }) => (
-					<div key={category}>
+					<div data-aos="fade" key={category}>
 						<h6>
 							<b>{category}</b>
 						</h6>
@@ -178,11 +180,13 @@ function InlineHome({ theme, toggleTheme }: ToggleThemeProps) {
 						</ul>
 					</div>
 				))}
-				<hr />
-				<h3>Weekends</h3>
-				{weekends.map((w) => (
-					<p key={1}>{w}</p>
-				))}
+				<hr data-aos="fade" />
+				<h3 data-aos="fade">Weekends</h3>
+				<div data-aos="fade">
+					{weekends.map((w) => (
+						<p key={1}>{w}</p>
+					))}
+				</div>
 			</div>
 			<div style={{ minHeight: '70px' }} className="m-3">
 				<hr />
