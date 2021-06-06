@@ -23,7 +23,7 @@
     ]
   },
   "about": [
-    "I am a current Computer Science undergraduate at Nanyang Technological Univeristy. I am also part of the university's <strong>Renaissance Engineering Program</strong>, which combines engineering with entrepreneuship. I expect to graduate form this program in December 2022 with a <strong>B.EngSc. (Computer Science with a Minor in Mathematics)</strong> and a <strong>M.Sc. (Technology Management)</strong>. I am also a recipient of the <strong>Renaissance Engineering Scholarship</strong>.",
+    "I am a current Computer Science undergraduate at Nanyang Technological University and a scholar of the university's <strong>Renaissance Engineering Program</strong>. This program combines an engineering education with entrepreneurship, where students are exposed to a breadth of engineering fields and eventually specialise in their chosen field. I expect to graduate from this program in December 2022 with a <strong>B.EngSc. (Computer Science with a Minor in Mathematics)</strong> and a <strong>M.Sc. (Technology Management)</strong>. I am also a recipient of the <strong>Renaissance Engineering Scholarship</strong>.",
     "I spent a semester exchange at the National University of Singapore.",
     "My interests lie in fullstack software engineering and language compilers. I have about 2 years of combined internship experience working on various software stacks. In order to deepen my knowledge in programming languages, I have developed an interest in language compilers, exploring various compiler phases and optimization techniques.",
     "I am an alumni of Raffles Institution."
@@ -363,6 +363,8 @@
     }
   ],
   "weekends": [
-    "My weekends are spent on either windsurfing or weightlifting."
+    "My weekends are either spent windsurfing or weightlifting.",
+    "I was part of my secondary school's sailing team for 4 years. Our team would spend every other afternoon at the Yacht Club racing Optimist and Byte dinghies. I picked up windsurfing in university after a hiatus from sea sports during my National Service. I eventually got back to competing in windsurfing, winning a bronze medal at the inter-tertiary windsurfing regatta. Nowadays, I give back to the club by coaching new members.",
+    "I picked up weightlifting during my National Service. The sport is more commonly referred to as \"Olympic Weightlifting\". It involves lifting a barbell overhead in 2 different ways: the clean & jerk, and the snatch. A typical training season lasts about 6 months, starting in September and culminates in the local competition in March. In my most recent competition, I lifted 100kg in the snatch and 115kg in the clean & jerk."
   ]
 }

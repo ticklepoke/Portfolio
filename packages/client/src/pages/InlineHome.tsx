@@ -52,7 +52,7 @@ function InlineHome({ theme, toggleTheme }: ToggleThemeProps) {
 				title="Home | Nigel Lee"
 				description="Computer Science student from Singapore, actively looking for software internships. Renaissance Engineering Program Student."
 			/>
-			<div className="m-3" style={{ minHeight: 'calc(100vh - 70px)', maxWidth: '1920px' }}>
+			<div className="m-3" style={{ minHeight: 'calc(100vh - 50px)', maxWidth: '1920px' }}>
 				<div data-aos="fade" className="d-md-flex d-sm-block justify-content-between">
 					<div>
 						<h1>
@@ -188,7 +188,7 @@ function InlineHome({ theme, toggleTheme }: ToggleThemeProps) {
 					))}
 				</div>
 			</div>
-			<div style={{ minHeight: '70px' }} className="m-3">
+			<div style={{ minHeight: '50px' }} className="m-3">
 				<hr />
 				<span className="text-muted">
 					The old site has been deprecated. Visit it <Link to="/depr">here.</Link>
