@@ -24,6 +24,9 @@ jobs:
         run: cd ./packages/codewriter && yarn install && yarn fetch-repo
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
+      
+      - name: Lint JSON
+        run: cd ./packages/codewriter && yarn jsonlint
 
       - name: Make PR
         uses: peter-evans/create-pull-request@v3
