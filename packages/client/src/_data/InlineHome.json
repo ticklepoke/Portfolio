@@ -23,7 +23,7 @@
     ]
   },
   "about": [
-    "I am a current Computer Science undergraduate at Nanyang Technological Univeristy. I am also part of the university's <strong>Renaissance Engineering Program</strong>, which combines engineering with entrepreneuship. I expect to graduate form this program in December 2022 with a <strong>B.EngSc. (Computer Science with a Minor in Mathematics)</strong> and a <strong>M.Sc. (Technology Management)</strong>. I am also a recipient of the <strong>Renaissance Engineering Scholarship</strong>.",
+    "I am a current Computer Science undergraduate at Nanyang Technological University and a scholar of the university's <strong>Renaissance Engineering Program</strong>. This program combines an engineering education with entrepreneurship, where students are exposed to a breadth of engineering fields and eventually specialise in their chosen field. I expect to graduate from this program in December 2022 with a <strong>B.EngSc. (Computer Science with a Minor in Mathematics)</strong> and a <strong>M.Sc. (Technology Management)</strong>. I am also a recipient of the <strong>Renaissance Engineering Scholarship</strong>.",
     "I spent a semester exchange at the National University of Singapore.",
     "My interests lie in fullstack software engineering and language compilers. I have about 2 years of combined internship experience working on various software stacks. In order to deepen my knowledge in programming languages, I have developed an interest in language compilers, exploring various compiler phases and optimization techniques.",
     "I am an alumni of Raffles Institution."
@@ -224,29 +224,147 @@
       "category": "Computer Science (NTU)",
       "courses": [
         {
-          "code": "CS1234",
-          "title": "Introduction"
+          "code": "CZ4031",
+          "title": "Database System Principles"
+        },
+        {
+          "code": "CZ3007",
+          "title": "Compiler Techniques"
+        },
+        {
+          "code": "CZ3006",
+          "title": "Computer Networks"
+        },
+        {
+          "code": "CZ2007",
+          "title": "Databases"
+        },
+        {
+          "code": "CZ2006",
+          "title": "Software Engineering"
+        },
+        {
+          "code": "CZ2005",
+          "title": "Operating Systems"
+        },
+        {
+          "code": "CZ2004",
+          "title": "Human Computer Interaction"
+        },
+        {
+          "code": "CZ2002",
+          "title": "Object Oriented Design"
+        },
+        {
+          "code": "CZ2001",
+          "title": "Algorithms"
+        },
+        {
+          "code": "CZ1015",
+          "title": "Data Science and Artificial Intelligence"
+        },
+        {
+          "code": "CZ1007",
+          "title": "Data Structures"
+        },
+        {
+          "code": "RE1016",
+          "title": "Engineering Computation"
         }
       ]
     },
     {
       "category": "Computer Science (NUS)",
-      "courses": []
+      "courses": [
+        {
+          "code": "CS4222",
+          "title": "Wireless Networks"
+        },
+        {
+          "code": "CS4215",
+          "title": "Programming Language Implementation"
+        },
+        {
+          "code": "CS3211",
+          "title": "Parallel and Concurrent Programming"
+        },
+        {
+          "code": "CS2108",
+          "title": "Media Computing"
+        }
+      ]
+    },
+    {
+      "category": "Mathematics (NTU / NUS)",
+      "courses": [
+        {
+          "code": "MH4514",
+          "title": "Financial Mathematics"
+        },
+        {
+          "code": "MA3252",
+          "title": "Linear and Network Optimisation"
+        },
+        {
+          "code": "MH3300",
+          "title": "Graph Theory"
+        },
+        {
+          "code": "MH2500",
+          "title": "Probability and Statistics"
+        }
+      ]
     },
     {
       "category": "General Engineering (NTU)",
-      "courses": []
-    },
-    {
-      "category": "Mathematics (NTU)",
-      "courses": []
+      "courses": [
+        {
+          "code": "RE1018",
+          "title": "Thermal Sciences and Electromagnetism"
+        },
+        {
+          "code": "RE1017",
+          "title": "Engineering Mechanics"
+        },
+        {
+          "code": "RE1015",
+          "title": "Chemical and Bio Engineering"
+        },
+        {
+          "code": "RE1014",
+          "title": "Electrical and Information Engineering"
+        },
+        {
+          "code": "RE1013",
+          "title": "Materials and Manufacturing"
+        }
+      ]
     },
     {
       "category": "Business / Technology Management (NTU)",
-      "courses": []
+      "courses": [
+        {
+          "code": "RE8013",
+          "title": "Financial Management"
+        },
+        {
+          "code": "RE8012",
+          "title": "Accounting"
+        },
+        {
+          "code": "RE8011",
+          "title": "Fundamentals Management"
+        },
+        {
+          "code": "RE8010",
+          "title": "Strategic Marketing"
+        }
+      ]
     }
   ],
   "weekends": [
-    "My weekends are spent on either windsurfing or weightlifting."
+    "My weekends are either spent windsurfing or weightlifting.",
+    "I was part of my secondary school's sailing team for 4 years. Our team would spend every other afternoon at the Yacht Club racing Optimist and Byte dinghies. I picked up windsurfing in university after a hiatus from sea sports during my National Service. I eventually got back to competing in windsurfing, winning a bronze medal at the inter-tertiary windsurfing regatta. Nowadays, I give back to the club by coaching new members.",
+    "I picked up weightlifting during my National Service. The sport is more commonly referred to as \"Olympic Weightlifting\". It involves lifting a barbell overhead in 2 different ways: the clean & jerk, and the snatch. A typical training season lasts about 6 months, starting in September and culminates in the local competition in March. In my most recent competition, I lifted 100kg in the snatch and 115kg in the clean & jerk."
   ]
 }
