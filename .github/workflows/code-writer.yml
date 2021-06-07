@@ -30,11 +30,10 @@ jobs:
 
       - name: Make PR
         uses: peter-evans/create-pull-request@v3
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
         with:
           branch: automated/json-updates
           delete-branch: true
           title: "[Automated] Updates for JSON payload"
           commit-message: "feat/Update JSON payload"
-          reviewers: "ticklepoke"
+          assignees: "ticklepoke"
+          token: ${{ secrets.GH_TOKEN }}
