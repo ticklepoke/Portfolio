@@ -23,7 +23,7 @@
     ]
   },
   "about": [
-    "I am a current Computer Science undergraduate at Nanyang Technological Univeristy. I am also part of the university's <strong>Renaissance Engineering Program</strong>, which combines engineering with entrepreneuship. I expect to graduate form this program in December 2022 with a <strong>B.EngSc. (Computer Science with a Minor in Mathematics)</strong> and a <strong>M.Sc. (Technology Management)</strong>. I am also a recipient of the <strong>Renaissance Engineering Scholarship</strong>.",
+    "I am a current Computer Science undergraduate at Nanyang Technological University and a scholar of the university's <strong>Renaissance Engineering Program</strong>. This program combines an engineering education with entrepreneurship, where students are exposed to a breadth of engineering fields and eventually specialise in their chosen field. I expect to graduate from this program in December 2022 with a <strong>B.EngSc. (Computer Science with a Minor in Mathematics)</strong> and a <strong>M.Sc. (Technology Management)</strong>. I am also a recipient of the <strong>Renaissance Engineering Scholarship</strong>.",
     "I spent a semester exchange at the National University of Singapore.",
     "My interests lie in fullstack software engineering and language compilers. I have about 2 years of combined internship experience working on various software stacks. In order to deepen my knowledge in programming languages, I have developed an interest in language compilers, exploring various compiler phases and optimization techniques.",
     "I am an alumni of Raffles Institution."
@@ -33,7 +33,11 @@
       "company": "Stashaway",
       "title": "Software Engineering Intern",
       "period": "Summer 2021",
-      "description": "Ipsum occaecat dolor exercitation reprehenderit eiusmod cillum anim excepteur veniam nulla et esse pariatur. Labore excepteur eiusmod eu aliqua minim aliquip occaecat voluptate. Fugiat et cupidatat aliqua dolor magna fugiat voluptate et adipisicing commodo. Ullamco sint veniam reprehenderit incididunt.Pariatur ullamco sint ex magna commodo aliquip ut minim culpa officia commodo. Deserunt ea in officia eiusmod ex. Nostrud cillum eiusmod voluptate exercitation nostrud incididunt sit voluptate sit incididunt pariatur Lorem qui anim.Pariatur cupidatat culpa et ea proident consequat quis dolore anim ipsum cupidatat nisi. Culpa tempor consectetur deserunt ipsum. Cillum proident cupidatat dolore ullamco nulla adipisicing proident occaecat. Culpa eu tempor irure enim.",
+      "description": [
+        "Having deployed finance-math as a personal project, I was offered an internship with the company's plan squad. The squad's objective was to build a financial planner with a focus on events specific to Singapore, such as CPF payouts. The planner was required to accurately project a user's net worth by compounding his / her assets and liabilities while factoring in nominal interest rates.",
+        "We implemented the project on a JavaScript stack and abstracted the core projection logic and entities into an NPM module. This allowed the logic to be reused in both client and server environments.",
+        "I also initiated an internship project which involved implementing gRPC APIs in an existing Express server. The end goal was to provide concurrent support for both REST and gRPC APIs, with minimal disruption to the controller-service architecture. I also took on the responsibility of writing proto files and generating TypeScript stubs."
+      ],
       "technologies": [
         {
           "title": "React Native",
@@ -61,7 +65,11 @@
       "company": "Motional",
       "title": "Front-End Software Engineering Intern",
       "period": "Winter 2020",
-      "description": "Ipsum occaecat dolor exercitation reprehenderit eiusmod cillum anim excepteur veniam nulla et esse pariatur. Labore excepteur eiusmod eu aliqua minim aliquip occaecat voluptate. Fugiat et cupidatat aliqua dolor magna fugiat voluptate et adipisicing commodo. Ullamco sint veniam reprehenderit incididunt.Pariatur ullamco sint ex magna commodo aliquip ut minim culpa officia commodo. Deserunt ea in officia eiusmod ex. Nostrud cillum eiusmod voluptate exercitation nostrud incididunt sit voluptate sit incididunt pariatur Lorem qui anim.Pariatur cupidatat culpa et ea proident consequat quis dolore anim ipsum cupidatat nisi. Culpa tempor consectetur deserunt ipsum. Cillum proident cupidatat dolore ullamco nulla adipisicing proident occaecat. Culpa eu tempor irure enim.",
+      "description": [
+        "As an intern with Map-Creator team, I was tasked with developing and refining features of a front-end map annotation platform. The two most challenging tasks I faced were validating the connectedness of geometric objects formed by nodes and validating complex mouse interaction logic such as calculating the orientation and displacement of a mouse drag. ",
+        "To tackle the first problem, I implemented a modified breadth-first search algorithm by replacing a queue data structure with a single neighbour. This modification allowed me to validate if the nodes formed a single, cyclic path.",
+        "To tackle the second problem, I abstracted DOM interactions into a reactive stream of events using RxJS. This allowed me to compose operators from its extensive library to achieve the desired validation logic on the stream of DOM events."
+      ],
       "technologies": [
         {
           "title": "React",
@@ -77,7 +85,12 @@
       "company": "Resync Technologies",
       "title": "Software Engineering Intern",
       "period": "2H 2020",
-      "description": "Ipsum occaecat dolor exercitation reprehenderit eiusmod cillum anim excepteur veniam nulla et esse pariatur. Labore excepteur eiusmod eu aliqua minim aliquip occaecat voluptate. Fugiat et cupidatat aliqua dolor magna fugiat voluptate et adipisicing commodo. Ullamco sint veniam reprehenderit incididunt.Pariatur ullamco sint ex magna commodo aliquip ut minim culpa officia commodo. Deserunt ea in officia eiusmod ex. Nostrud cillum eiusmod voluptate exercitation nostrud incididunt sit voluptate sit incididunt pariatur Lorem qui anim.Pariatur cupidatat culpa et ea proident consequat quis dolore anim ipsum cupidatat nisi. Culpa tempor consectetur deserunt ipsum. Cillum proident cupidatat dolore ullamco nulla adipisicing proident occaecat. Culpa eu tempor irure enim.",
+      "description": [
+        "As an apprentice in SG Innovate's Summation Program, I was attached to a startup as a technology intern. My work there involved developing and improving features on both an Angular frontend and an Express backend. Majority of my initiatives centered around improving developer experience.",
+        "In order to efficiently control features that were visible in production, I implemented a feature flag system. This system comprised of a service that held the core logic for showing or hiding features, which could be consumed by Angular directives or route guards. This allowed for a finer grain of control of the features in production.",
+        "As the codebase was relatively young, I initiated unit tests in order to uphold Test Driven Development principles. This was where I familiarised myself with techniques such as spies and mocks.",
+        "I also initiated an internship project involving implementing an Object Relation Mapping layer within the Express server, preventing the need for raw database queries. By utilising TypeORM, I was able to generate well-typed model files based on PostgreSQL schemas. This significantly reduced development time."
+      ],
       "technologies": [
         {
           "title": "Angular",
@@ -105,7 +118,11 @@
       "company": "DBS Bank",
       "title": "Innovation Intern",
       "period": "Summer 2019",
-      "description": "Ipsum occaecat dolor exercitation reprehenderit eiusmod cillum anim excepteur veniam nulla et esse pariatur. Labore excepteur eiusmod eu aliqua minim aliquip occaecat voluptate. Fugiat et cupidatat aliqua dolor magna fugiat voluptate et adipisicing commodo. Ullamco sint veniam reprehenderit incididunt.Pariatur ullamco sint ex magna commodo aliquip ut minim culpa officia commodo. Deserunt ea in officia eiusmod ex. Nostrud cillum eiusmod voluptate exercitation nostrud incididunt sit voluptate sit incididunt pariatur Lorem qui anim.Pariatur cupidatat culpa et ea proident consequat quis dolore anim ipsum cupidatat nisi. Culpa tempor consectetur deserunt ipsum. Cillum proident cupidatat dolore ullamco nulla adipisicing proident occaecat. Culpa eu tempor irure enim.",
+      "description": [
+        "I was an intern with the Bank's UNI.corn+ internship program. I was placed in a group of fellow interns and tasked to design a web-based solution to encourage banking clients to plan for their retirement.",
+        "My team engaged in several iterations of rapid prototyping and eventually embarked on an ambitious plan to create a financial planner that could comprehensively account for most major financial events in a client's life. ",
+        "My team implemented the idea in a React and NodeJS based prototype."
+      ],
       "technologies": [
         {
           "title": "React",
@@ -121,7 +138,7 @@
   "project": [
     {
       "title": "Metacircular-JS",
-      "description": "Ipsum occaecat dolor exercitation reprehenderit eiusmod cillum anim excepteur veniam nulla et esse pariatur. Labore excepteur eiusmod eu aliqua minim aliquip occaecat voluptate. Fugiat et cupidatat aliqua dolor magna fugiat voluptate et adipisicing commodo. Ullamco sint veniam reprehenderit incididunt.Pariatur ullamco sint ex magna commodo aliquip ut minim culpa officia commodo. Deserunt ea in officia eiusmod ex. Nostrud cillum eiusmod voluptate exercitation nostrud incididunt sit voluptate sit incididunt pariatur Lorem qui anim.Pariatur cupidatat culpa et ea proident consequat quis dolore anim ipsum cupidatat nisi. Culpa tempor consectetur deserunt ipsum. Cillum proident cupidatat dolore ullamco nulla adipisicing proident occaecat. Culpa eu tempor irure enim.",
+      "description": "Metacircular-JS is a TypeScript implementation of the metacircular evaluator described in the SICP textbook. My inspiration to build this came from the CS4215 Programming Language Implementation course I took in NUS, which pays homage to the original MIT course. The metacircular evaluator consists of two mutually recursive functions: <code>evaluate()</code> and <code>apply()</code>. <code>evaluate()</code> recursively parses an AST to identify the semantic components of the code, while <code>apply()</code> utilises the host language to invoke features of the interpreted language. The supported language grammar is represented in Backus-Naur form in the documentation.",
       "tags": [
         "Compilers",
         "Evaluators"
@@ -138,11 +155,11 @@
       ],
       "slug": "metacircular-js",
       "github": "https://github.com/ticklepoke/metacircular-js",
-      "stars": 10
+      "stars": 1
     },
     {
       "title": "Nand2Rust",
-      "description": "Ipsum occaecat dolor exercitation reprehenderit eiusmod cillum anim excepteur veniam nulla et esse pariatur. Labore excepteur eiusmod eu aliqua minim aliquip occaecat voluptate. Fugiat et cupidatat aliqua dolor magna fugiat voluptate et adipisicing commodo. Ullamco sint veniam reprehenderit incididunt.Pariatur ullamco sint ex magna commodo aliquip ut minim culpa officia commodo. Deserunt ea in officia eiusmod ex. Nostrud cillum eiusmod voluptate exercitation nostrud incididunt sit voluptate sit incididunt pariatur Lorem qui anim.Pariatur cupidatat culpa et ea proident consequat quis dolore anim ipsum cupidatat nisi. Culpa tempor consectetur deserunt ipsum. Cillum proident cupidatat dolore ullamco nulla adipisicing proident occaecat. Culpa eu tempor irure enim.",
+      "description": "Nand2Rust is a Rust based implementation of the projects found in The Elements of Computing Systems textbook, or more commonly known as Nand2Tetris. The Rust implementation spans 4 different modules of a compiler: the frontend which is responsible for lexical and syntax analysis, the backend (WIP) which is responsible optimisation and code generation, the VM-translator which translates VM code to assembly, and the assembler, which translates assembly to binary code.",
       "tags": [
         "Compilers",
         "Virtual Machines"
@@ -183,7 +200,7 @@
     },
     {
       "title": "Finance-Math",
-      "description": "Ipsum occaecat dolor exercitation reprehenderit eiusmod cillum anim excepteur veniam nulla et esse pariatur. Labore excepteur eiusmod eu aliqua minim aliquip occaecat voluptate. Fugiat et cupidatat aliqua dolor magna fugiat voluptate et adipisicing commodo. Ullamco sint veniam reprehenderit incididunt.Pariatur ullamco sint ex magna commodo aliquip ut minim culpa officia commodo. Deserunt ea in officia eiusmod ex. Nostrud cillum eiusmod voluptate exercitation nostrud incididunt sit voluptate sit incididunt pariatur Lorem qui anim.Pariatur cupidatat culpa et ea proident consequat quis dolore anim ipsum cupidatat nisi. Culpa tempor consectetur deserunt ipsum. Cillum proident cupidatat dolore ullamco nulla adipisicing proident occaecat. Culpa eu tempor irure enim.",
+      "description": "Finance-Math is an NPM library which I publish to provide utility functions such as PV, FV, PMT, IRR for financial calculations. I used this project to explore the various tools in the JavaScript ecosystem. This project was inspired by my internship with DBS Bank and the RE8013 Financial Management course I took in NTU.",
       "tags": [
         "Finance"
       ],
@@ -203,7 +220,7 @@
     },
     {
       "title": "NeoVim",
-      "description": "Ipsum occaecat dolor exercitation reprehenderit eiusmod cillum anim excepteur veniam nulla et esse pariatur. Labore excepteur eiusmod eu aliqua minim aliquip occaecat voluptate. Fugiat et cupidatat aliqua dolor magna fugiat voluptate et adipisicing commodo. Ullamco sint veniam reprehenderit incididunt.Pariatur ullamco sint ex magna commodo aliquip ut minim culpa officia commodo. Deserunt ea in officia eiusmod ex. Nostrud cillum eiusmod voluptate exercitation nostrud incididunt sit voluptate sit incididunt pariatur Lorem qui anim.Pariatur cupidatat culpa et ea proident consequat quis dolore anim ipsum cupidatat nisi. Culpa tempor consectetur deserunt ipsum. Cillum proident cupidatat dolore ullamco nulla adipisicing proident occaecat. Culpa eu tempor irure enim.",
+      "description": "This repository contains my current NeoVim configuration that I use both in the terminal and with VSCode. My goal is to recreate in Neovim commonly used features found in text editors. This configuration currently includes ripgrep text searches, fuzzy file searches, git integration and code suggestion. ",
       "tags": [
         "NeoVim",
         "Vim"
@@ -224,29 +241,147 @@
       "category": "Computer Science (NTU)",
       "courses": [
         {
-          "code": "CS1234",
-          "title": "Introduction"
+          "code": "CZ4031",
+          "title": "Database System Principles"
+        },
+        {
+          "code": "CZ3007",
+          "title": "Compiler Techniques"
+        },
+        {
+          "code": "CZ3006",
+          "title": "Computer Networks"
+        },
+        {
+          "code": "CZ2007",
+          "title": "Databases"
+        },
+        {
+          "code": "CZ2006",
+          "title": "Software Engineering"
+        },
+        {
+          "code": "CZ2005",
+          "title": "Operating Systems"
+        },
+        {
+          "code": "CZ2004",
+          "title": "Human Computer Interaction"
+        },
+        {
+          "code": "CZ2002",
+          "title": "Object Oriented Design"
+        },
+        {
+          "code": "CZ2001",
+          "title": "Algorithms"
+        },
+        {
+          "code": "CZ1015",
+          "title": "Data Science and Artificial Intelligence"
+        },
+        {
+          "code": "CZ1007",
+          "title": "Data Structures"
+        },
+        {
+          "code": "RE1016",
+          "title": "Engineering Computation"
         }
       ]
     },
     {
       "category": "Computer Science (NUS)",
-      "courses": []
+      "courses": [
+        {
+          "code": "CS4222",
+          "title": "Wireless Networks"
+        },
+        {
+          "code": "CS4215",
+          "title": "Programming Language Implementation"
+        },
+        {
+          "code": "CS3211",
+          "title": "Parallel and Concurrent Programming"
+        },
+        {
+          "code": "CS2108",
+          "title": "Media Computing"
+        }
+      ]
+    },
+    {
+      "category": "Mathematics (NTU / NUS)",
+      "courses": [
+        {
+          "code": "MH4514",
+          "title": "Financial Mathematics"
+        },
+        {
+          "code": "MA3252",
+          "title": "Linear and Network Optimisation"
+        },
+        {
+          "code": "MH3300",
+          "title": "Graph Theory"
+        },
+        {
+          "code": "MH2500",
+          "title": "Probability and Statistics"
+        }
+      ]
     },
     {
       "category": "General Engineering (NTU)",
-      "courses": []
-    },
-    {
-      "category": "Mathematics (NTU)",
-      "courses": []
+      "courses": [
+        {
+          "code": "RE1018",
+          "title": "Thermal Sciences and Electromagnetism"
+        },
+        {
+          "code": "RE1017",
+          "title": "Engineering Mechanics"
+        },
+        {
+          "code": "RE1015",
+          "title": "Chemical and Bio Engineering"
+        },
+        {
+          "code": "RE1014",
+          "title": "Electrical and Information Engineering"
+        },
+        {
+          "code": "RE1013",
+          "title": "Materials and Manufacturing"
+        }
+      ]
     },
     {
       "category": "Business / Technology Management (NTU)",
-      "courses": []
+      "courses": [
+        {
+          "code": "RE8013",
+          "title": "Financial Management"
+        },
+        {
+          "code": "RE8012",
+          "title": "Accounting"
+        },
+        {
+          "code": "RE8011",
+          "title": "Fundamentals Management"
+        },
+        {
+          "code": "RE8010",
+          "title": "Strategic Marketing"
+        }
+      ]
     }
   ],
   "weekends": [
-    "My weekends are spent on either windsurfing or weightlifting."
+    "My weekends are either spent windsurfing or weightlifting.",
+    "I was part of my secondary school's sailing team for 4 years. Our team would spend every other afternoon at the Yacht Club racing Optimist and Byte dinghies. I picked up windsurfing in university after a hiatus from sea sports during my National Service. I eventually got back to competing in windsurfing, winning a bronze medal at the inter-tertiary windsurfing regatta. Nowadays, I give back to the club by coaching new members.",
+    "I picked up weightlifting during my National Service. The sport is more commonly referred to as \"Olympic Weightlifting\". It involves lifting a barbell overhead in 2 different ways: the clean & jerk, and the snatch. A typical training season lasts about 6 months, starting in September and culminates in the local competition in March. In my most recent competition, I lifted 100kg in the snatch and 115kg in the clean & jerk."
   ]
 }

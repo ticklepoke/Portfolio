@@ -21,7 +21,7 @@ interface InlineHomeData {
 		company: string;
 		title: string;
 		period: string;
-		description: string;
+		description: string[];
 		technologies: { title: string; icon: string }[];
 	}[];
 	project: {
@@ -52,8 +52,8 @@ function InlineHome({ theme, toggleTheme }: ToggleThemeProps) {
 				title="Home | Nigel Lee"
 				description="Computer Science student from Singapore, actively looking for software internships. Renaissance Engineering Program Student."
 			/>
-			<div className="m-3" style={{ minHeight: 'calc(100vh - 70px)', maxWidth: '1920px' }}>
-				<div className="d-md-flex d-sm-block justify-content-between">
+			<div className="m-3" style={{ minHeight: 'calc(100vh - 50px)', maxWidth: '1920px' }}>
+				<div data-aos="fade" className="d-md-flex d-sm-block justify-content-between">
 					<div>
 						<h1>
 							{titleBar.name.en}
@@ -71,22 +71,24 @@ function InlineHome({ theme, toggleTheme }: ToggleThemeProps) {
 					</div>
 					<Toggle theme={theme} toggleTheme={toggleTheme} />
 				</div>
-				<hr />
-				<div className="my-2">
+				<hr data-aos="fade" />
+				<div data-aos="fade" className="my-2">
 					{about.map((line) => (
 						<p key={line} dangerouslySetInnerHTML={{ __html: line }} />
 					))}
 				</div>
-				<hr />
-				<h3>Work Experience</h3>
+				<hr data-aos="fade" />
+				<h3 data-aos="fade">Work Experience</h3>
 				<ul>
 					{work.map(({ company, title, period, description, technologies }) => (
-						<li key={company} className="mt-3 mb-4">
+						<li data-aos="fade" key={company} className="mt-3 mb-4">
 							<h5>
 								<b>{company}</b>&nbsp;&nbsp;-&nbsp;&nbsp;{title}
 							</h5>
 							<h5>{period}</h5>
-							<p>{description}</p>
+							{description.map((d) => (
+								<p key={0}>{d}</p>
+							))}
 							<span>
 								Technologies Used:{' '}
 								{technologies.map(({ title, icon }) => (
@@ -102,11 +104,11 @@ function InlineHome({ theme, toggleTheme }: ToggleThemeProps) {
 						</li>
 					))}
 				</ul>
-				<hr />
-				<h3>Projects</h3>
+				<hr data-aos="fade" />
+				<h3 data-aos="fade">Projects</h3>
 				<ul>
 					{project.map(({ title, description, tags, languages, github, stars }) => (
-						<li key={title} className="mt3 mb-4">
+						<li data-aos="fade" key={title} className="mt3 mb-4">
 							<h5>
 								<b>{title}</b>
 							</h5>
@@ -119,7 +121,7 @@ function InlineHome({ theme, toggleTheme }: ToggleThemeProps) {
 									{tag}
 								</span>
 							))}
-							<p className="my-2">{description}</p>
+							<p className="my-2" dangerouslySetInnerHTML={{ __html: description }}></p>
 							{languages
 								.filter((lang) => !EXCLUDED_FILE_TYPE.includes(lang.title))
 								.map(({ title, logo }) => (
@@ -159,32 +161,36 @@ function InlineHome({ theme, toggleTheme }: ToggleThemeProps) {
 						</li>
 					))}
 				</ul>
-				<hr />
-				<h3>Education</h3>
-				<p className="text-muted">An extensive list of courses I have taken during my university education.</p>
-				{education.map(({ category, courses }) => (
-					<div key={category}>
-						<h6>
-							<b>{category}</b>
-						</h6>
-						<ul>
-							{courses.map(({ code, title }) => (
-								<li key={code}>
-									<span>
-										<b>{code}</b>: {title}
-									</span>
-								</li>
-							))}
-						</ul>
-					</div>
-				))}
-				<hr />
-				<h3>Weekends</h3>
-				{weekends.map((w) => (
-					<p key={1}>{w}</p>
-				))}
+				<hr data-aos="fade" />
+				<div data-aos="fade">
+					<h3>Education</h3>
+					<p className="text-muted">An extensive list of courses I have taken during my university education.</p>
+					{education.map(({ category, courses }) => (
+						<div key={category}>
+							<h6>
+								<b>{category}</b>
+							</h6>
+							<ul>
+								{courses.map(({ code, title }) => (
+									<li key={code}>
+										<span>
+											<b>{code}</b>: {title}
+										</span>
+									</li>
+								))}
+							</ul>
+						</div>
+					))}
+				</div>
+				<hr data-aos="fade" />
+				<h3 data-aos="fade">Weekends</h3>
+				<div data-aos="fade">
+					{weekends.map((w) => (
+						<p key={1}>{w}</p>
+					))}
+				</div>
 			</div>
-			<div style={{ minHeight: '70px' }} className="m-3">
+			<div style={{ minHeight: '50px' }} className="m-3">
 				<hr />
 				<span className="text-muted">
 					The old site has been deprecated. Visit it <Link to="/depr">here.</Link>
