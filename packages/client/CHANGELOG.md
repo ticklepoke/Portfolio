@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.10.0](https://github.com/ticklepoke/Portfolio/compare/v0.9.1...v0.10.0) (2021-06-08)
+
+
+### Features
+
+* **projects:** Add pathfinding project ([8bd4eb5](https://github.com/ticklepoke/Portfolio/commit/8bd4eb5386f3a7906b0e89b21b64a10f5498a05b))
+
+
+
+
+
 # [0.9.0](https://github.com/ticklepoke/Portfolio/compare/v0.8.0...v0.9.0) (2021-06-07)
 
 
