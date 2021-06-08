@@ -24,13 +24,16 @@ jobs:
         run: cd ./packages/codewriter && yarn install && yarn fetch-repo
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
-      
+
       - name: Lint JSON
         run: cd ./packages/codewriter && yarn jsonlint
 
       - name: Make PR
         uses: peter-evans/create-pull-request@v3
         with:
-          branch: automated/repo
+          branch: automated/json-updates
           delete-branch: true
-          title: automated/repo
+          title: "[Automated] Updates for JSON payload"
+          commit-message: "feat/Update JSON payload"
+          assignees: "ticklepoke"
+          token: ${{ secrets.GH_TOKEN }}
