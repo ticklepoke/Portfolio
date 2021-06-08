@@ -2,7 +2,7 @@ name: Continuous Deployment Master
 
 on:
   push:
-    branches: [ master ]
+    branches: [master]
 
 jobs:
   deploy:
@@ -17,17 +17,20 @@ jobs:
       - name: Test
         run: cd ./packages/client && yarn test --watchAll=false
 
+      - name: Check assets
+        run: cd ./packages/assetchecker && yarn install && yarn check-assets
+
       - name: Lint
         run: cd ./packages/client && yarn lint
-        
+
       - name: Build static files
         run: cd ./packages/client && yarn build --if-present
 
       - name: Deploy to netlify
         uses: netlify/actions/cli@master
-        env: 
+        env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.MASTER_NETLIFY_SITE_ID }}
-        with: 
+        with:
           args: deploy --dir=./packages/client/build --prod
           secrets: '["NETLIFY_AUTH_TOKEN", "NETLIFY_SITE_ID"]'

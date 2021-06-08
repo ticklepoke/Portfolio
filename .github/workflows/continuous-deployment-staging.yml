@@ -17,6 +17,9 @@ jobs:
       - name: Test
         run: cd ./packages/client && yarn test --watchAll=false
 
+      - name: Check assets
+        run: cd ./packages/assetchecker && yarn install && yarn check-assets
+
       - name: Lint
         run: cd ./packages/client && yarn lint
 
