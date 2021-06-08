@@ -1,7 +1,6 @@
 {
   "packages": [
-    "packages/client",
-    "packages/codewriter"
+    "packages/*"
   ],
   "version": "0.8.0",
   "npmClient": "yarn"
