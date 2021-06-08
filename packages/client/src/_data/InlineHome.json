@@ -219,6 +219,18 @@
       "stars": 0
     },
     {
+      "title": "Pathfinding",
+      "description": "Pathfinding is a React based graph traversal visualizer. It utilizes RxJS to efficiently handle DOM events and graph traversal execution.",
+      "tags": [
+        "Graphs",
+        "RxJS"
+      ],
+      "languages": [],
+      "slug": "pathfinding",
+      "github": "https://github.com/ticklepoke/pathfinding",
+      "stars": 0
+    },
+    {
       "title": "NeoVim",
       "description": "This repository contains my current NeoVim configuration that I use both in the terminal and with VSCode. My goal is to recreate in Neovim commonly used features found in text editors. This configuration currently includes ripgrep text searches, fuzzy file searches, git integration and code suggestion. ",
       "tags": [
