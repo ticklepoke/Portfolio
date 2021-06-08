@@ -15,7 +15,8 @@
     "diff": "lerna diff",
     "install": "lerna bootstrap",
     "start": "lerna run start --scope=@portfolio/client",
-    "fetch-repo": "lerna run fetch-repo --scope=codewriter"
+    "fetch-repo": "lerna run fetch-repo --scope=@portfolio/codewriter",
+    "check-assets": "lerna run check-assets --scope=@portfolio/assetchecker"
   },
   "config": {
     "commitizen": {
