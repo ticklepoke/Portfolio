@@ -202,6 +202,18 @@
       "stars": 0
     },
     {
+      "title": "Pathfinding",
+      "description": "Pathfinding is a React based graph traversal visualizer. It utilizes RxJS to efficiently handle DOM events and graph traversal execution.",
+      "tags": [
+        "Graphs",
+        "RxJS"
+      ],
+      "languages": [],
+      "slug": "pathfinding",
+      "github": "https://github.com/ticklepoke/pathfinding",
+      "stars": 0
+    },
+    {
       "title": "NeoVim",
       "description": "Ipsum occaecat dolor exercitation reprehenderit eiusmod cillum anim excepteur veniam nulla et esse pariatur. Labore excepteur eiusmod eu aliqua minim aliquip occaecat voluptate. Fugiat et cupidatat aliqua dolor magna fugiat voluptate et adipisicing commodo. Ullamco sint veniam reprehenderit incididunt.Pariatur ullamco sint ex magna commodo aliquip ut minim culpa officia commodo. Deserunt ea in officia eiusmod ex. Nostrud cillum eiusmod voluptate exercitation nostrud incididunt sit voluptate sit incididunt pariatur Lorem qui anim.Pariatur cupidatat culpa et ea proident consequat quis dolore anim ipsum cupidatat nisi. Culpa tempor consectetur deserunt ipsum. Cillum proident cupidatat dolore ullamco nulla adipisicing proident occaecat. Culpa eu tempor irure enim.",
       "tags": [
