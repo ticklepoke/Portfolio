@@ -21,7 +21,7 @@ interface InlineHomeData {
 		company: string;
 		title: string;
 		period: string;
-		description: string;
+		description: string[];
 		technologies: { title: string; icon: string }[];
 	}[];
 	project: {
@@ -52,7 +52,7 @@ function InlineHome({ theme, toggleTheme }: ToggleThemeProps) {
 				title="Home | Nigel Lee"
 				description="Computer Science student from Singapore, actively looking for software internships. Renaissance Engineering Program Student."
 			/>
-			<div className="m-3" style={{ minHeight: 'calc(100vh - 70px)', maxWidth: '1920px' }}>
+			<div className="m-3" style={{ minHeight: 'calc(100vh - 50px)', maxWidth: '1920px' }}>
 				<div data-aos="fade" className="d-md-flex d-sm-block justify-content-between">
 					<div>
 						<h1>
@@ -86,7 +86,9 @@ function InlineHome({ theme, toggleTheme }: ToggleThemeProps) {
 								<b>{company}</b>&nbsp;&nbsp;-&nbsp;&nbsp;{title}
 							</h5>
 							<h5>{period}</h5>
-							<p>{description}</p>
+							{description.map((d) => (
+								<p key={0}>{d}</p>
+							))}
 							<span>
 								Technologies Used:{' '}
 								{technologies.map(({ title, icon }) => (
@@ -119,7 +121,7 @@ function InlineHome({ theme, toggleTheme }: ToggleThemeProps) {
 									{tag}
 								</span>
 							))}
-							<p className="my-2">{description}</p>
+							<p className="my-2" dangerouslySetInnerHTML={{ __html: description }}></p>
 							{languages
 								.filter((lang) => !EXCLUDED_FILE_TYPE.includes(lang.title))
 								.map(({ title, logo }) => (
@@ -160,26 +162,26 @@ function InlineHome({ theme, toggleTheme }: ToggleThemeProps) {
 					))}
 				</ul>
 				<hr data-aos="fade" />
-				<h3 data-aos="fade">Education</h3>
-				<p data-aos="fade" className="text-muted">
-					An extensive list of courses I have taken during my university education.
-				</p>
-				{education.map(({ category, courses }) => (
-					<div data-aos="fade" key={category}>
-						<h6>
-							<b>{category}</b>
-						</h6>
-						<ul>
-							{courses.map(({ code, title }) => (
-								<li key={code}>
-									<span>
-										<b>{code}</b>: {title}
-									</span>
-								</li>
-							))}
-						</ul>
-					</div>
-				))}
+				<div data-aos="fade">
+					<h3>Education</h3>
+					<p className="text-muted">An extensive list of courses I have taken during my university education.</p>
+					{education.map(({ category, courses }) => (
+						<div key={category}>
+							<h6>
+								<b>{category}</b>
+							</h6>
+							<ul>
+								{courses.map(({ code, title }) => (
+									<li key={code}>
+										<span>
+											<b>{code}</b>: {title}
+										</span>
+									</li>
+								))}
+							</ul>
+						</div>
+					))}
+				</div>
 				<hr data-aos="fade" />
 				<h3 data-aos="fade">Weekends</h3>
 				<div data-aos="fade">
@@ -188,7 +190,7 @@ function InlineHome({ theme, toggleTheme }: ToggleThemeProps) {
 					))}
 				</div>
 			</div>
-			<div style={{ minHeight: '70px' }} className="m-3">
+			<div style={{ minHeight: '50px' }} className="m-3">
 				<hr />
 				<span className="text-muted">
 					The old site has been deprecated. Visit it <Link to="/depr">here.</Link>
