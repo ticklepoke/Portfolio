@@ -6,12 +6,13 @@ on:
 
 jobs:
   deploy:
-    name: Deploy (Master)
+    name: Bump Version (Master)
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
         with:
           fetch-depth: "0"
+          token: ${{ secrets.GH_TOKEN }}
 
       - run: git fetch --depth=1 origin +refs/tags/*:refs/tags/*
 
