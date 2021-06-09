@@ -26,6 +26,12 @@ jobs:
       - name: Build static files
         run: cd ./packages/client && yarn build --if-present
 
+      - name: Bump version
+        run: |
+          git config --global user.name "ticklepoke"
+          git config --global user.email "lee.nigel@hotmail.com"
+          yarn new-version -y
+
       - name: Deploy to netlify
         uses: netlify/actions/cli@master
         env:
