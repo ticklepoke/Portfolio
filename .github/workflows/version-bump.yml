@@ -1,0 +1,22 @@
+name: Version bump master
+
+on:
+  push:
+    branches: [master]
+
+jobs:
+  deploy:
+    name: Deploy (Master)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: "0"
+
+      - run: git fetch --depth=1 origin +refs/tags/*:refs/tags/*
+
+      - name: Bump version
+        run: |
+          git config --global user.name "ticklepoke"
+          git config --global user.email "lee.nigel@hotmail.com"
+          yarn new-version -y
