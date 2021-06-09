@@ -225,7 +225,20 @@
         "Graphs",
         "RxJS"
       ],
-      "languages": [],
+      "languages": [
+        {
+          "title": "TypeScript",
+          "logo": "typescript.png"
+        },
+        {
+          "title": "HTML",
+          "logo": "html.png"
+        },
+        {
+          "title": "CSS",
+          "logo": "css.png"
+        }
+      ],
       "slug": "pathfinding",
       "github": "https://github.com/ticklepoke/pathfinding",
       "stars": 0
