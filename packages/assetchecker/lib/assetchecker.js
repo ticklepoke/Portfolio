@@ -5,6 +5,7 @@ const EXCLUDED_FILES = ["batchfile.png"];
 
 function assetchecker() {
   let files = new Set();
+
   const assetPath = path.resolve(__dirname, "../../client/src/assets/icons");
   fs.readdir(assetPath, (err, dirFiles) => {
     for (let file of dirFiles) {
