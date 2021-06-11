@@ -137,6 +137,17 @@
   ],
   "project": [
     {
+      "title": "Codemods",
+      "description": "A JavaScript based codemod project based on Facebook's jscodeshift library. It programmatically edits JavaScript source code by modifying its AST.",
+      "tags": [
+        "Codemod"
+      ],
+      "languages": [],
+      "slug": "codemods",
+      "github": "https://github.com/ticklepoke/codemods",
+      "stars": 0
+    },
+    {
       "title": "Metacircular-JS",
       "description": "Metacircular-JS is a TypeScript implementation of the metacircular evaluator described in the SICP textbook. My inspiration to build this came from the CS4215 Programming Language Implementation course I took in NUS, which pays homage to the original MIT course. The metacircular evaluator consists of two mutually recursive functions: <code>evaluate()</code> and <code>apply()</code>. <code>evaluate()</code> recursively parses an AST to identify the semantic components of the code, while <code>apply()</code> utilises the host language to invoke features of the interpreted language. The supported language grammar is represented in Backus-Naur form in the documentation.",
       "tags": [
