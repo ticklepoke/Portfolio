@@ -142,10 +142,23 @@
       "tags": [
         "Codemod"
       ],
-      "languages": [],
+      "languages": [
+        {
+          "title": "TypeScript",
+          "logo": "typescript.png"
+        },
+        {
+          "title": "JavaScript",
+          "logo": "javascript.png"
+        },
+        {
+          "title": "Shell",
+          "logo": "shell.png"
+        }
+      ],
       "slug": "codemods",
       "github": "https://github.com/ticklepoke/codemods",
-      "stars": 0
+      "stars": 1
     },
     {
       "title": "Metacircular-JS",
