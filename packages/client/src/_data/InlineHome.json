@@ -242,21 +242,17 @@
       "stars": 0
     },
     {
-      "title": "NeoVim",
-      "description": "This repository contains my current NeoVim configuration that I use both in the terminal and with VSCode. My goal is to recreate in Neovim commonly used features found in text editors. This configuration currently includes ripgrep text searches, fuzzy file searches, git integration and code suggestion. ",
+      "title": "Dotfiles",
+      "description": "This repository contains my dotfiles. It has the current zsh, alacritty and neovim configuration that I use both in the terminal and with VSCode. My goal is to recreate in neovim commonly used features found in text editors. This configuration currently includes ripgrep text searches, fuzzy file searches, git integration and code suggestion. ",
       "tags": [
         "NeoVim",
-        "Vim"
+        "zsh",
+        "alacritty"
       ],
-      "languages": [
-        {
-          "title": "Vim script",
-          "logo": "vimscript.png"
-        }
-      ],
-      "slug": "nvim",
-      "github": "https://github.com/ticklepoke/nvim",
-      "stars": 2
+      "languages": [],
+      "slug": "dotfiles",
+      "github": "https://github.com/ticklepoke/dotfiles",
+      "stars": 1
     }
   ],
   "education": [
