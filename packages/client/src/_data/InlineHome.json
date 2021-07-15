@@ -275,7 +275,16 @@
         "zsh",
         "alacritty"
       ],
-      "languages": [],
+      "languages": [
+        {
+          "title": "Shell",
+          "logo": "shell.png"
+        },
+        {
+          "title": "Vim script",
+          "logo": "vimscript.png"
+        }
+      ],
       "slug": "dotfiles",
       "github": "https://github.com/ticklepoke/dotfiles",
       "stars": 1
