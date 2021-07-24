@@ -137,6 +137,14 @@
   ],
   "project": [
     {
+      "title": "Natural Speech Currency Input",
+      "description": "A parser combinator for handling free-form currency or monetary values. Input values such as '1,230 dollars', '100k singapore dollars', '0.001 cents' can be validated and normalised to well typed data. Note that parser combinators are different from NLP.",
+      "languages": [],
+      "slug": "nautral-text-currency",
+      "github": "https://github.com/ticklepoke/natural-text-currency",
+      "stars": 0
+    },
+    {
       "title": "Codemods",
       "description": "A JavaScript based codemod project based on Facebook's jscodeshift library. It programmatically edits JavaScript source code by modifying its AST.",
       "tags": [
