@@ -3,6 +3,54 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.17.0](https://github.com/ticklepoke/Portfolio/compare/v0.16.1...v0.17.0) (2021-07-24)
+
+
+### Features
+
+* Add profile ([bdc4d01](https://github.com/ticklepoke/Portfolio/commit/bdc4d01165bc121ad7996e40d9f0f7ba7096cfdc))
+* Change static url ([5ecaed0](https://github.com/ticklepoke/Portfolio/commit/5ecaed0c1f8d2de070c73a42b59ae4105a03666b))
+* **inline-home:** Add dotfiles ([777bc60](https://github.com/ticklepoke/Portfolio/commit/777bc60217bb5837d05abe1a8731fc420b965e2d))
+* parser-combinator ([bb488c1](https://github.com/ticklepoke/Portfolio/commit/bb488c1edad02bb3a7b238ca248ffe5cd1a40b94))
+* **project:** Add codemod ([a9eba10](https://github.com/ticklepoke/Portfolio/commit/a9eba1020c0a860b9af70cd80ff0fd08d59f01c4))
+* **projects:** Add pathfinding project ([8bd4eb5](https://github.com/ticklepoke/Portfolio/commit/8bd4eb5386f3a7906b0e89b21b64a10f5498a05b))
+* Update profile ([394438a](https://github.com/ticklepoke/Portfolio/commit/394438ab30bb8a2995cae59b31caf145cb847a37))
+
+
+
+## [0.9.1](https://github.com/ticklepoke/Portfolio/compare/v0.8.0...v0.9.1) (2021-06-07)
+
+
+### Bug Fixes
+
+* **inline-home:** Fix lint errors ([5fe5a70](https://github.com/ticklepoke/Portfolio/commit/5fe5a70b894009c654f9da3d4fa5f938958aa432))
+* silence tests ([d2093e9](https://github.com/ticklepoke/Portfolio/commit/d2093e995b2ba39629ebdb612a4bbb3819efa6c8))
+
+
+### Features
+
+* Add code writer ([ac9a520](https://github.com/ticklepoke/Portfolio/commit/ac9a5204eee719873576309a7a31dec20b2c0790))
+* Add cron job ([e0c607c](https://github.com/ticklepoke/Portfolio/commit/e0c607c20d1759a285b4c61de8c3061c44cdac4d))
+* Add job icons ([08e89b6](https://github.com/ticklepoke/Portfolio/commit/08e89b63e56f160758b3ad0e1653794ef0995191))
+* Add json linter ([66db818](https://github.com/ticklepoke/Portfolio/commit/66db8188e185daf03d41671e98f4d9f1cd0759b9))
+* Add logos ([4711b8c](https://github.com/ticklepoke/Portfolio/commit/4711b8ccd85e4f52113ae358033318d70ec5954c))
+* Add projects ([baaa9a8](https://github.com/ticklepoke/Portfolio/commit/baaa9a8301ad5c7dfc5e767925e0d0d594097fbb))
+* Add weekends description ([a1fbd53](https://github.com/ticklepoke/Portfolio/commit/a1fbd5389742d21a7f180ebe6036374739aa9094))
+* Add work experience ([c294753](https://github.com/ticklepoke/Portfolio/commit/c2947538aad33b34da2477c569233c52e7e1cb81))
+* **inline-home:** Add populated data ([e039a05](https://github.com/ticklepoke/Portfolio/commit/e039a059c99a3eeac6aeeed6e02b82fde4a119b1))
+* **inline-home:** Add projects and education ([99c5ec0](https://github.com/ticklepoke/Portfolio/commit/99c5ec018ed53bcc9e8264986a5ece171068d1dc))
+* **inline-home:** Add scroll animation ([c321c50](https://github.com/ticklepoke/Portfolio/commit/c321c5083e0db924e3bb11e9e018633581763673))
+* **inline-home:** Fix map error ([0c3d784](https://github.com/ticklepoke/Portfolio/commit/0c3d7845c95c3736e0cf7fcd791c999ea65fb3ee))
+* **InlineHome:** Add new inline home page ([f338d99](https://github.com/ticklepoke/Portfolio/commit/f338d99e2891ab6b6087466633cff0d16729f1a4))
+
+
+
+# [0.8.0](https://github.com/ticklepoke/Portfolio/compare/v0.6.0...v0.8.0) (2021-06-05)
+
+
+
+
+
 ## [0.16.1](https://github.com/ticklepoke/Portfolio/compare/v0.16.0...v0.16.1) (2021-07-15)
 
 **Note:** Version bump only for package @portfolio/client
