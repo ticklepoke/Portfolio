@@ -134,7 +134,7 @@ function InlineHome({ theme, toggleTheme }: ToggleThemeProps) {
 									/>
 								))}
 							<span>&nbsp;&nbsp;&nbsp;|&nbsp;</span>
-							<a href={github} title="Github Repository">
+							<a href={github} title="Github Repository" target="_blank" rel="noopener noreferrer">
 								<img
 									className="tech-icon mx-2"
 									alt="Github"
