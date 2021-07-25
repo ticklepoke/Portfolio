@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.18.1](https://github.com/ticklepoke/Portfolio/compare/v0.18.0...v0.18.1) (2021-07-25)
+
+
+### Bug Fixes
+
+* Format json ([053f625](https://github.com/ticklepoke/Portfolio/commit/053f6251b494e024537fd1f008076ae73c5c5d73))
+
+
+
+
+
 # [0.18.0](https://github.com/ticklepoke/Portfolio/compare/v0.17.0...v0.18.0) (2021-07-24)
 
 
