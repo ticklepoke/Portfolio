@@ -143,7 +143,20 @@
         "Parser Combinator",
         "Functional Programming"
       ],
-      "languages": [],
+      "languages": [
+        {
+          "title": "TypeScript",
+          "logo": "typescript.png"
+        },
+        {
+          "title": "JavaScript",
+          "logo": "javascript.png"
+        },
+        {
+          "title": "Shell",
+          "logo": "shell.png"
+        }
+      ],
       "slug": "natural-text-currency",
       "github": "https://github.com/ticklepoke/natural-text-currency",
       "stars": 0
