@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.19.0](https://github.com/ticklepoke/Portfolio/compare/v0.18.4...v0.19.0) (2022-07-20)
+
+
+### Features
+
+* updates ([83f2aae](https://github.com/ticklepoke/Portfolio/commit/83f2aaea291b4147e38a673a9ce48e695e99476e))
+
+
+
+
+
 ## [0.18.4](https://github.com/ticklepoke/Portfolio/compare/v0.18.3...v0.18.4) (2021-08-24)
 
 **Note:** Version bump only for package root
